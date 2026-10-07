@@ -1,7 +1,5 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
-import sunGlow from '../assets/svg/cta-sun-glow.svg'
-import dune from '../assets/svg/cta-dune.svg'
 import common from '../content/common.js'
 import { useContent } from '../i18n.jsx'
 import { EASE, Reveal, SplitText } from '../motion/index.jsx'
@@ -26,10 +24,10 @@ export default function CtaSection({ heading, subtext, primary, secondary, prima
         transition={{ duration: 1, ease: EASE }}
       >
         <motion.div aria-hidden className="pointer-events-none absolute -top-[300px] size-[520px] start-[62%]" style={{ y: sunY }}>
-          <img src={sunGlow} alt="" className="block size-full max-w-none animate-[spin_60s_linear_infinite]" />
+          <div className="size-full animate-[pulse_6s_ease-in-out_infinite] rounded-full bg-[radial-gradient(circle,rgba(255,214,79,0.45)_0%,rgba(255,214,79,0)_70%)]" />
         </motion.div>
         <motion.div aria-hidden className="pointer-events-none absolute top-[190px] h-[300px] w-[1500px] start-[250px] max-lg:top-auto max-lg:bottom-[-160px] max-lg:start-[-200px] rtl:-scale-x-100" style={{ x: duneX }}>
-          <img src={dune} alt="" className="block size-full max-w-none" />
+          <div className="size-full rounded-[50%] bg-[linear-gradient(180deg,rgba(231,171,54,0.35)_0%,rgba(231,171,54,0)_60%)]" />
         </motion.div>
 
         <div className="relative flex flex-col gap-[14px]">

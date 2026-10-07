@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@custom-variant rtl (&:where([dir="rtl"], [dir="rtl"] *));
+@custom-variant ltr (&:where([dir="ltr"], [dir="ltr"] *));
+
+@theme {
+  /* Fonts — swapped per language via the variables below */
+  --font-display: var(--gh-font-display);
+  --font-body: var(--gh-font-body);
+  --font-arabic: "Cairo", "Tajawal", system-ui, sans-serif;
+
+  /* Palette (from the Figma file) */
+  --color-ink: #071a2e;          /* page background */
+  --color-ink-deep: #04111f;     /* footer */
+  --color-ink-panel: #0c2238;
+  --color-ink-raised: #0c2a47;
+  --color-line: #1c3a57;
+  --color-gold: #e7ab36;
+  --color-gold-ink: #3a2a08;
+  --color-sky: #03c7fc;
+  --color-teal: #0a6e8c;
+  --color-mist: #d7e6f2;
+  --color-cloud: #c3cfdb;
+  --color-haze: #9fb2c6;
+  --color-slate: #7d90a6;
+  --color-dusk: #5f7189;
+  --color-navy: #0b1b2b;
+  --color-paper: #f4f7fa;
+  --color-paper-line: #e6ecf2;
+  --color-body: #4a5568;
+
+  --animate-float: float 9s ease-in-out infinite;
+  --animate-float-slow: float 14s ease-in-out infinite;
+  --animate-pulse-ring: pulse-ring 2.4s cubic-bezier(0.2, 0.6, 0.3, 1) infinite;
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-shimmer: shimmer 3.2s ease-in-out infinite;
+  --animate-spin-slow: spin 40s linear infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+    33% { transform: translate3d(30px, -24px, 0) scale(1.04); }
+    66% { transform: translate3d(-24px, 18px, 0) scale(0.97); }
+  }
+  @keyframes pulse-ring {
+    0% { transform: scale(0.6); opacity: 0.9; }
+    100% { transform: scale(1.9); opacity: 0; }
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @keyframes shimmer {
+    0% { transform: translateX(-120%) skewX(-18deg); }
+    60%, 100% { transform: translateX(220%) skewX(-18deg); }
+  }
+}
+
+:root {
+  --gh-font-display: "Outfit", system-ui, sans-serif;
+  --gh-font-body: "Roboto", system-ui, sans-serif;
+  color-scheme: dark;
+}
+
+[dir="rtl"] {
+  --gh-font-display: "Alexandria", "Cairo", system-ui, sans-serif;
+  --gh-font-body: "Tajawal", "Cairo", system-ui, sans-serif;
+}
+
+html {
+  background: var(--color-ink);
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-ink);
+  color: #fff;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(231, 171, 54, 0.35);
+  color: #fff;
+}
+
+/* Arabic copy reads better with no tracking */
+[dir="rtl"] .tracking-reset-rtl {
+  letter-spacing: 0 !important;
+}
+
+.marquee-rtl {
+  animation-direction: reverse;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

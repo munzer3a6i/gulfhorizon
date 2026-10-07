@@ -95,10 +95,9 @@ function Stats({ stats }) {
                   featured ? 'bg-white/20' : 'bg-sky/[0.07]'
                 }`}
               />
-              <CountUp
-                value={s.value}
-                className={`relative font-display text-[44px] font-semibold leading-[1.05] ${featured ? 'text-navy' : 'text-white'}`}
-              />
+              <span dir="ltr" className={`relative self-start font-display text-[44px] font-semibold leading-[1.05] ${featured ? 'text-navy' : 'text-white'}`}>
+                <CountUp value={s.value} />
+              </span>
               <p className={`relative font-body text-[15px] leading-[1.5] ${featured ? 'text-gold-ink' : 'text-haze'}`}>{s.label}</p>
             </div>
           </StaggerItem>

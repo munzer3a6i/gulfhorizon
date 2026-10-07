@@ -19,7 +19,7 @@ function initials(name) {
     .replace(/[()&.]/g, ' ')
     .split(/\s+/)
     .filter((w) => w && !/^(al|co|of|the|and)$/i.test(w))
-    .slice(0, 2)
+    .slice(0, /[\u0600-\u06FF]/.test(name) ? 1 : 2)
     .map((w) => w[0])
     .join('')
     .toUpperCase()

@@ -6,7 +6,7 @@ const VIEWPORT = { once: true, margin: '0px 0px -10% 0px' }
 
 // Latin snippets inside the copy (email, phone, license no., DMW site). They become links where useful
 // and are isolated as LTR runs so they read correctly inside Arabic paragraphs.
-const TOKENS = /(admin@gulfhorizon\.com\.ph|\(02\) 5302-1952 to 54|DMW-217-LB-11282023-R|dmw\.gov\.ph|Gulf Horizon International Services(?![,.]? Inc))/
+const TOKENS = /(info@gulfhorizon\.net|\(02\) 5302-1952 to 54|DMW-217-LB-11282023-R|dmw\.gov\.ph|Gulf Horizon International Services(?![,.]? Inc))/
 const LINK_CLS = 'whitespace-nowrap font-medium text-teal underline decoration-teal/30 underline-offset-[3px] transition-colors hover:decoration-teal'
 
 export function Rich({ text }) {

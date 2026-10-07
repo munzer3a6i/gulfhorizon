@@ -3,7 +3,7 @@
 
 import { LICENSE_NO } from './common.js'
 
-export const CONTACT_EMAIL = 'admin@gulfhorizon.com.ph'
+export const CONTACT_EMAIL = 'info@gulfhorizon.net'
 export const MAP_URL = 'https://www.google.com/maps/search/?api=1&query=509+Merchant+Center+Bldg+Padre+Faura+St+cor+Mabini+St+Ermita+Manila'
 
 const PHONE_MAIN = '(02) 5302-1952 to 54'

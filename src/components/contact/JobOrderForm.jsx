@@ -344,6 +344,7 @@ export default function JobOrderForm({ copy }) {
         body: JSON.stringify({
           ...fields,
           Language: lang === 'ar' ? 'Arabic' : 'English',
+          _replyto: fields.Email,
           _subject: SUBJECT,
           _template: 'table',
           _captcha: 'false',

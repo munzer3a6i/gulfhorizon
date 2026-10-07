@@ -23,7 +23,7 @@ export default {
       officesTitle: 'OFFICES',
       offices: [
         { name: 'Manila Head Office', detail: '509 Merchant Center Bldg., Padre Faura St. cor. Mabini St., Ermita, Manila' },
-        { name: 'Regional Branches', detail: 'Davao · Iloilo · Pangasinan · Bacolod' },
+        { name: 'Regional Branches', detail: 'Davao · Iloilo · Pangasinan · Bacolod · Cagayan de Oro' },
       ],
       quickTitle: 'QUICK LINKS',
       quick: [
@@ -64,7 +64,7 @@ export default {
       officesTitle: 'مكاتبنا',
       offices: [
         { name: 'المكتب الرئيسي في مانيلا', detail: 'مبنى ميرشانت سنتر 509، شارع بادري فاورا تقاطع شارع مابيني، إرميتا، مانيلا' },
-        { name: 'الفروع الإقليمية', detail: 'دافاو · إيلويلو · بانغاسينان · باكولود' },
+        { name: 'الفروع الإقليمية', detail: 'دافاو · إيلويلو · بانغاسينان · باكولود · كاغايان دي أورو' },
       ],
       quickTitle: 'روابط سريعة',
       quick: [

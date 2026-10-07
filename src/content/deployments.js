@@ -12,7 +12,7 @@ export default {
     },
     stats: [
       { value: '18+', label: 'Years in overseas recruitment' },
-      { value: '5', label: 'Offices across the Philippines' },
+      { value: '6', label: 'Offices across the Philippines' },
       { value: '45–60', label: 'Days from job order to deployment' },
       { value: '2029', label: 'DMW license valid through', static: true },
     ],
@@ -137,7 +137,7 @@ export default {
     },
     stats: [
       { value: '18+', label: 'عامًا في الاستقدام الخارجي' },
-      { value: '5', label: 'مكاتب في أنحاء الفلبين' },
+      { value: '6', label: 'مكاتب في أنحاء الفلبين' },
       { value: '45–60', label: 'يومًا من طلب الاستقدام حتى السفر' },
       { value: '2029', label: 'ترخيص DMW ساري حتى', static: true },
     ],

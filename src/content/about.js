@@ -79,7 +79,7 @@ export default {
       },
       philippines: {
         name: 'The Philippines',
-        detail: 'Manila head office · 4 regional branches',
+        detail: 'Manila head office · 5 regional branches',
         imageAlt: 'Manila skyline at sunset',
       },
       routeLabel: 'Deployment route from the Philippines to Saudi Arabia',
@@ -88,7 +88,7 @@ export default {
         body: 'Owned and managed by executives with long-established reputations for integrity and reliability. We deploy to Saudi Arabia and across the Gulf — including the UAE, Qatar, Kuwait and Bahrain.',
         items: [
           { title: 'DMW licensed', detail: `License No. ${LICENSE_NO}` },
-          { title: 'Nationwide reach', detail: 'Manila, Davao, Iloilo, Pangasinan & Bacolod' },
+          { title: 'Nationwide reach', detail: 'Manila, Davao, Iloilo, Pangasinan, Bacolod & Cagayan de Oro' },
         ],
       },
     },
@@ -226,7 +226,7 @@ export default {
       },
       philippines: {
         name: 'الفلبين',
-        detail: 'المكتب الرئيسي في مانيلا · 4 فروع إقليمية',
+        detail: 'المكتب الرئيسي في مانيلا · 5 فروع إقليمية',
         imageAlt: 'أفق مانيلا عند الغروب',
       },
       routeLabel: 'مسار الاستقدام من الفلبين إلى السعودية',
@@ -235,7 +235,7 @@ export default {
         body: 'تملكها وتديرها قيادات ذات سمعة راسخة في النزاهة والموثوقية. نستقدم للمملكة العربية السعودية ولدول الخليج — بما فيها الإمارات وقطر والكويت والبحرين.',
         items: [
           { title: 'مرخّصون من DMW', detail: `رقم الترخيص: ${LICENSE_NO}` },
-          { title: 'انتشار في أنحاء الفلبين', detail: 'مانيلا ودافاو وإيلويلو وبانغاسينان وباكولود' },
+          { title: 'انتشار في أنحاء الفلبين', detail: 'مانيلا ودافاو وإيلويلو وبانغاسينان وباكولود وكاغايان دي أورو' },
         ],
       },
     },

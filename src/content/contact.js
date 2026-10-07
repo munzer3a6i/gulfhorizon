@@ -43,7 +43,7 @@ export default {
     ],
     branches: {
       title: 'Regional branches',
-      list: 'Davao · Iloilo · Pangasinan · Bacolod',
+      list: 'Davao · Iloilo · Pangasinan · Bacolod · Cagayan de Oro',
     },
     form: {
       title: 'Send a job order',
@@ -101,7 +101,7 @@ export default {
     ],
     branches: {
       title: 'الفروع الإقليمية',
-      list: 'دافاو · إيلويلو · بانغاسينان · باكولود',
+      list: 'دافاو · إيلويلو · بانغاسينان · باكولود · كاغايان دي أورو',
     },
     form: {
       title: 'أرسل طلب استقدام',

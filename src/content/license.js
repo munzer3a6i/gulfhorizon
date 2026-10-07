@@ -20,7 +20,7 @@ export default {
         { label: 'LICENSE TYPE', value: 'Land-based private recruitment agency' },
         { label: 'VALID UNTIL', value: '3 September 2029' },
         { label: 'HEAD OFFICE', value: '509 Merchant Center Bldg., 3/F, Padre Faura St. cor. Mabini St., Ermita, Manila' },
-        { label: 'REGIONAL BRANCHES', value: 'Davao · Iloilo · Pangasinan · Bacolod' },
+        { label: 'REGIONAL BRANCHES', value: 'Davao · Iloilo · Pangasinan · Bacolod · Cagayan de Oro' },
       ],
     },
     sections: [
@@ -142,7 +142,7 @@ export default {
         { label: 'نوع الترخيص', value: 'وكالة استقدام خاصة للعمالة البرية' },
         { label: 'ساري حتى', value: '3 سبتمبر 2029' },
         { label: 'المكتب الرئيسي', value: 'مبنى ميرشانت سنتر 509، الطابق 3، شارع بادري فاورا تقاطع شارع مابيني، إرميتا، مانيلا' },
-        { label: 'الفروع الإقليمية', value: 'دافاو · إيلويلو · بانغاسينان · باكولود' },
+        { label: 'الفروع الإقليمية', value: 'دافاو · إيلويلو · بانغاسينان · باكولود · كاغايان دي أورو' },
       ],
     },
     sections: [

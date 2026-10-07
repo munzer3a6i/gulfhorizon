@@ -1,3 +1,6 @@
+import content from '../content/privacy.js'
+import LegalPage from '../components/legal/LegalPage.jsx'
+
 export default function Privacy() {
-  return <div className="h-[60vh]" />
+  return <LegalPage content={content} />
 }

@@ -20,6 +20,7 @@ export default {
       statValue: '45–60 days',
       statLabel: 'From job order to deployment',
     },
+    statsLabel: 'Key figures',
     stats: [
       { value: '18+', label: 'Years in overseas recruitment' },
       { value: '5', label: 'Offices across the Philippines' },
@@ -128,6 +129,7 @@ export default {
       statValue: '45–60 يومًا',
       statLabel: 'من طلب الاستقدام حتى السفر',
     },
+    statsLabel: 'أرقام رئيسية',
     stats: [
       { value: '18+', label: 'عامًا في الاستقدام الخارجي' },
       { value: '5', label: 'مكاتب في أنحاء الفلبين' },

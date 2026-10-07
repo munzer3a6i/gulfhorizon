@@ -88,7 +88,7 @@ function OfficeMap({ m }) {
       </Reveal>
 
       {/* Halo + pulse rings */}
-      <div className={`absolute top-[46%] size-[23.3%] -translate-y-1/2 ${CENTER}`} aria-hidden>
+      <div className={`absolute top-[46%] aspect-square w-[23.3%] -translate-y-1/2 ${CENTER}`} aria-hidden>
         <motion.img
           src={mapHalo}
           alt=""

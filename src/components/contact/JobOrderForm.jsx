@@ -32,7 +32,7 @@ function errorFor(el, copy) {
 }
 
 const fieldBase =
-  'peer block w-full rounded-[12px] border bg-[#f5f8fb] font-body text-[15px] text-navy placeholder:text-[#8a99ab] outline-none transition-[border-color,box-shadow,background-color] duration-300 focus:bg-white'
+  'peer block w-full rounded-[12px] border bg-[#f5f8fb] font-body text-[15px] placeholder:text-[#8a99ab] outline-none transition-[border-color,box-shadow,background-color] duration-300 focus:bg-white'
 
 function Field({ field, copy, options, value, error, onChange, onBlur, index }) {
   const reduce = useReducedMotion()
@@ -56,7 +56,7 @@ function Field({ field, copy, options, value, error, onChange, onBlur, index }) 
   if (field.kind === 'select') {
     control = (
       <div className="relative">
-        <select {...common} className={`${fieldBase} ${tone} h-[52px] cursor-pointer appearance-none ps-4 pe-11 ${value ? '' : 'text-[#8a99ab]'}`}>
+        <select {...common} className={`${fieldBase} ${tone} h-[52px] cursor-pointer appearance-none ps-4 pe-11 ${value ? 'text-navy' : 'text-[#8a99ab]'}`}>
           <option value="" disabled>
             {copy.placeholder}
           </option>
@@ -77,7 +77,7 @@ function Field({ field, copy, options, value, error, onChange, onBlur, index }) 
   } else if (field.kind === 'textarea') {
     control = (
       <div className="relative">
-        <textarea {...common} placeholder={copy.placeholder} rows={5} className={`${fieldBase} ${tone} h-[140px] min-h-[120px] resize-y p-4 leading-[1.5]`} />
+        <textarea {...common} placeholder={copy.placeholder} rows={5} className={`${fieldBase} ${tone} h-[140px] min-h-[120px] resize-y p-4 leading-[1.5] text-navy`} />
         <FocusLine />
       </div>
     )
@@ -92,7 +92,7 @@ function Field({ field, copy, options, value, error, onChange, onBlur, index }) 
           pattern={field.pattern}
           placeholder={copy.placeholder}
           dir={field.ltr ? 'ltr' : undefined}
-          className={`${fieldBase} ${tone} h-[52px] px-4 ${field.ltr ? 'rtl:text-right' : ''}`}
+          className={`${fieldBase} ${tone} h-[52px] px-4 text-navy ${field.ltr ? 'rtl:text-right' : ''}`}
         />
         <FocusLine />
       </div>
@@ -395,115 +395,115 @@ export default function JobOrderForm({ copy }) {
       className="relative overflow-hidden rounded-[24px] bg-white shadow-[0_40px_100px_-40px_rgba(0,0,0,0.6)]"
     >
       <div ref={innerRef} className="p-6 sm:p-10">
-      {/* accent bar that sweeps in along the top edge */}
-      <motion.span
-        aria-hidden
-        className="absolute inset-x-0 top-0 h-[3px] origin-left bg-gradient-to-r from-sky via-teal to-gold rtl:origin-right rtl:bg-gradient-to-l"
-        initial={{ scaleX: 0 }}
-        whileInView={{ scaleX: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1.2, delay: 0.3, ease: EASE }}
-      />
-      <AnimatePresence mode="wait" initial={false}>
-        {status === 'success' ? (
-          <SuccessPanel key="success" copy={copy.success} onAgain={() => setStatus('idle')} />
-        ) : (
-          <motion.form
-            key="form"
-            ref={formRef}
-            action={`https://formsubmit.co/${FORMSUBMIT_EMAIL}`}
-            method="POST"
-            noValidate={enhanced}
-            onSubmit={onSubmit}
-            className="flex flex-col gap-6"
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.98, filter: 'blur(4px)' }}
-            transition={{ duration: 0.45, ease: EASE }}
-          >
-            {/* No-JS fallback options for FormSubmit */}
-            <input type="hidden" name="_subject" value={SUBJECT} />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="Language" value={lang === 'ar' ? 'Arabic' : 'English'} />
-            <div aria-hidden className="absolute -start-[9999px] top-auto size-px overflow-hidden">
-              <label htmlFor="jo-honey">{copy.honeypot}</label>
-              <input ref={honeyRef} id="jo-honey" type="text" name="_honey" tabIndex={-1} autoComplete="off" defaultValue="" />
-            </div>
-
-            <div className="flex flex-col gap-6">
-              <SplitText as="h2" text={copy.title} className="font-display text-[28px] font-medium leading-normal text-navy sm:text-[32px]" />
-              <p className="font-body text-[16px] leading-[1.55] text-body">{copy.description}</p>
-            </div>
-
-            <div className="grid grid-cols-1 gap-x-5 gap-y-6 sm:grid-cols-2">
-              {FIELDS.map((f, i) => (
-                <Field
-                  key={f.id}
-                  index={i}
-                  field={f}
-                  copy={copy.fields[f.id]}
-                  options={f.options ? copy[f.options] : null}
-                  value={values[f.id]}
-                  error={errors[f.id]}
-                  onChange={onChange}
-                  onBlur={onBlur}
-                />
-              ))}
-            </div>
-
-            <AnimatePresence initial={false}>
-              {status === 'error' && (
-                <motion.div
-                  key="error"
-                  role="alert"
-                  className="overflow-hidden"
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: 'auto', x: [0, -8, 8, -5, 5, 0] }}
-                  exit={{ opacity: 0, height: 0 }}
-                  transition={{ duration: 0.5, ease: EASE }}
-                >
-                  <div className="flex flex-col gap-3 rounded-[14px] border border-[#f3c3c4] bg-[#fdf1f1] p-4 sm:flex-row sm:items-center">
-                    <CircleAlert className="size-6 shrink-0 text-[#d43b40]" strokeWidth={2} aria-hidden />
-                    <div className="flex-1">
-                      <p className="font-display text-[16px] font-medium text-navy">{copy.error.title}</p>
-                      <p className="mt-0.5 font-body text-[14px] leading-[1.5] text-body">{copy.error.body}</p>
-                    </div>
-                    <button
-                      type="button"
-                      onClick={send}
-                      className="group inline-flex shrink-0 items-center gap-2 self-start rounded-full bg-navy px-4 py-2.5 font-body text-[14px] font-medium text-white transition-colors duration-300 hover:bg-teal sm:self-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
-                    >
-                      <RotateCcw className="size-4 transition-transform duration-500 group-hover:-rotate-180" strokeWidth={2} aria-hidden />
-                      {copy.error.retry}
-                    </button>
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
-
-            <div className="flex flex-col-reverse gap-5 sm:flex-row sm:items-center sm:justify-between">
-              <div className="flex flex-col gap-1 sm:max-w-[380px]">
-                <p className="font-body text-[13px] leading-[1.5] text-[#8a99ab]">{copy.consent}</p>
-                <AnimatePresence initial={false}>
-                  {hasErrors && (
-                    <motion.p
-                      key="fix"
-                      className="font-body text-[13px] font-medium text-[#d43b40]"
-                      initial={{ opacity: 0, y: -4 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -4 }}
-                    >
-                      {copy.fixErrors}
-                    </motion.p>
-                  )}
-                </AnimatePresence>
+        {/* accent bar that sweeps in along the top edge */}
+        <motion.span
+          aria-hidden
+          className="absolute inset-x-0 top-0 h-[3px] origin-left bg-gradient-to-r from-sky via-teal to-gold rtl:origin-right rtl:bg-gradient-to-l"
+          initial={{ scaleX: 0 }}
+          whileInView={{ scaleX: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, delay: 0.3, ease: EASE }}
+        />
+        <AnimatePresence mode="wait" initial={false}>
+          {status === 'success' ? (
+            <SuccessPanel key="success" copy={copy.success} onAgain={() => setStatus('idle')} />
+          ) : (
+            <motion.form
+              key="form"
+              ref={formRef}
+              action={`https://formsubmit.co/${FORMSUBMIT_EMAIL}`}
+              method="POST"
+              noValidate={enhanced}
+              onSubmit={onSubmit}
+              className="flex flex-col gap-6"
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.98, filter: 'blur(4px)' }}
+              transition={{ duration: 0.45, ease: EASE }}
+            >
+              {/* No-JS fallback options for FormSubmit */}
+              <input type="hidden" name="_subject" value={SUBJECT} />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="Language" value={lang === 'ar' ? 'Arabic' : 'English'} />
+              <div aria-hidden className="absolute -start-[9999px] top-auto size-px overflow-hidden">
+                <label htmlFor="jo-honey">{copy.honeypot}</label>
+                <input ref={honeyRef} id="jo-honey" type="text" name="_honey" tabIndex={-1} autoComplete="off" defaultValue="" />
               </div>
-              <SubmitButton sending={status === 'sending'} label={copy.submit} sendingLabel={copy.sending} />
-            </div>
-          </motion.form>
-        )}
-      </AnimatePresence>
+  
+              <div className="flex flex-col gap-6">
+                <SplitText as="h2" text={copy.title} className="font-display text-[28px] font-medium leading-normal text-navy sm:text-[32px]" />
+                <p className="font-body text-[16px] leading-[1.55] text-body">{copy.description}</p>
+              </div>
+  
+              <div className="grid grid-cols-1 gap-x-5 gap-y-6 sm:grid-cols-2">
+                {FIELDS.map((f, i) => (
+                  <Field
+                    key={f.id}
+                    index={i}
+                    field={f}
+                    copy={copy.fields[f.id]}
+                    options={f.options ? copy[f.options] : null}
+                    value={values[f.id]}
+                    error={errors[f.id]}
+                    onChange={onChange}
+                    onBlur={onBlur}
+                  />
+                ))}
+              </div>
+  
+              <AnimatePresence initial={false}>
+                {status === 'error' && (
+                  <motion.div
+                    key="error"
+                    role="alert"
+                    className="overflow-hidden"
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: 'auto', x: [0, -8, 8, -5, 5, 0] }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.5, ease: EASE }}
+                  >
+                    <div className="flex flex-col gap-3 rounded-[14px] border border-[#f3c3c4] bg-[#fdf1f1] p-4 sm:flex-row sm:items-center">
+                      <CircleAlert className="size-6 shrink-0 text-[#d43b40]" strokeWidth={2} aria-hidden />
+                      <div className="flex-1">
+                        <p className="font-display text-[16px] font-medium text-navy">{copy.error.title}</p>
+                        <p className="mt-0.5 font-body text-[14px] leading-[1.5] text-body">{copy.error.body}</p>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={send}
+                        className="group inline-flex shrink-0 items-center gap-2 self-start rounded-full bg-navy px-4 py-2.5 font-body text-[14px] font-medium text-white transition-colors duration-300 hover:bg-teal sm:self-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+                      >
+                        <RotateCcw className="size-4 transition-transform duration-500 group-hover:-rotate-180" strokeWidth={2} aria-hidden />
+                        {copy.error.retry}
+                      </button>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+  
+              <div className="flex flex-col-reverse gap-5 sm:flex-row sm:items-center sm:justify-between">
+                <div className="flex flex-col gap-1 sm:max-w-[380px]">
+                  <p className="font-body text-[13px] leading-[1.5] text-[#8a99ab]">{copy.consent}</p>
+                  <AnimatePresence initial={false}>
+                    {hasErrors && (
+                      <motion.p
+                        key="fix"
+                        className="font-body text-[13px] font-medium text-[#d43b40]"
+                        initial={{ opacity: 0, y: -4 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -4 }}
+                      >
+                        {copy.fixErrors}
+                      </motion.p>
+                    )}
+                  </AnimatePresence>
+                </div>
+                <SubmitButton sending={status === 'sending'} label={copy.submit} sendingLabel={copy.sending} />
+              </div>
+            </motion.form>
+          )}
+        </AnimatePresence>
       </div>
     </motion.div>
   )

@@ -7,6 +7,6 @@
  * Tip: after activating, you can replace the address with the random alias FormSubmit gives you
  * so the email isn't visible in the page source.
  */
-export const FORMSUBMIT_EMAIL = import.meta.env.VITE_FORMSUBMIT_EMAIL || 'info@gulfhorizonservices.com'
+export const FORMSUBMIT_EMAIL = import.meta.env.VITE_FORMSUBMIT_EMAIL || 'admin@gulfhorizon.com.ph'
 
 export const FORMSUBMIT_ENDPOINT = `https://formsubmit.co/ajax/${FORMSUBMIT_EMAIL}`

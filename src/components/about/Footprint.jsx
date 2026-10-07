@@ -45,13 +45,14 @@ function RouteArc({ label }) {
     return () => ro.disconnect()
   }, [])
 
-  // The Philippines card is the second card: on the end side. Flights go Philippines -> Saudi Arabia.
+  // Physical (left-based) coordinates. The Philippines card is the second card, i.e. on the right in LTR
+  // and on the left in RTL. Flights go Philippines -> Saudi Arabia.
   if (size) {
     const half = (size.w - GAP) / 2
-    const startCenter = half / 2
-    const endCenter = size.w - half / 2
-    const ph = isRtl ? startCenter : endCenter
-    const sa = isRtl ? endCenter : startCenter
+    const leftCenter = half / 2
+    const rightCenter = size.w - half / 2
+    const ph = isRtl ? leftCenter : rightCenter
+    const sa = isRtl ? rightCenter : leftCenter
     const y = size.h * PIN_Y
     geo.current = { x0: ph, y0: y, x1: sa, y1: y, cx: size.w / 2, cy: -size.h * 0.12 }
   }
@@ -103,13 +104,13 @@ function RouteArc({ label }) {
             [g.x0, g.y0, 'bg-sky'],
             [g.x1, g.y1, 'bg-gold'],
           ].map(([px, py, color], i) => (
-            <span key={i} className="absolute -ms-[7px] -mt-[7px] size-[14px]" style={{ insetInlineStart: isRtl ? size.w - px : px, top: py }}>
+            <span key={i} className="absolute -ml-[7px] -mt-[7px] size-[14px]" style={{ left: px, top: py }}>
               <span className={`absolute inset-0 rounded-full ${color} animate-pulse-ring`} />
               <span className={`absolute inset-[3px] rounded-full ${color} ring-2 ring-white/80`} />
             </span>
           ))}
           {!reduce && (
-            <motion.span className="absolute start-0 top-0 -ms-[14px] -mt-[14px] flex size-[28px] items-center justify-center" style={{ x: isRtl ? useNeg(x, size.w) : x, y, opacity }} dir="ltr">
+            <motion.span className="absolute left-0 top-0 -ml-[14px] -mt-[14px] flex size-[28px] items-center justify-center" style={{ x, y, opacity }}>
               <motion.span style={{ rotate }} className="flex size-[28px] items-center justify-center rounded-full bg-white text-navy shadow-[0_6px_20px_-4px_rgba(0,0,0,0.5)]">
                 <Plane className="size-[15px]" strokeWidth={2} fill="currentColor" aria-hidden />
               </motion.span>
@@ -119,10 +120,6 @@ function RouteArc({ label }) {
       )}
     </div>
   )
-}
-
-function useNeg() {
-  return 0
 }
 
 function CityCard({ city, img, delay }) {

@@ -128,7 +128,7 @@ export default function Nav() {
             <div className="flex items-center gap-[12px] sm:gap-[16px]">
               <LanguageToggle />
               <div className="hidden sm:block">
-                <Button to="/contact" arrow={false}>
+                <Button to="/contact#job-order" arrow={false}>
                   {nav.cta}
                 </Button>
               </div>
@@ -176,7 +176,7 @@ export default function Nav() {
               ))}
             </motion.ul>
             <motion.div className="mt-10" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.45, ease: EASE }}>
-              <Button to="/contact" magnetic={false} className="w-full">
+              <Button to="/contact#job-order" magnetic={false} className="w-full">
                 {nav.cta}
               </Button>
             </motion.div>

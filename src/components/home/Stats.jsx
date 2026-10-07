@@ -3,9 +3,9 @@ import { motion } from 'framer-motion'
 import { Container } from '../ui.jsx'
 import { CountUp, EASE, Stagger, StaggerItem } from '../../motion/index.jsx'
 
-export default function Stats({ stats }) {
+export default function Stats({ stats, label }) {
   return (
-    <Container as="section" aria-label="Key figures">
+    <Container as="section" aria-label={label}>
       <motion.div
         className="relative overflow-hidden rounded-[24px] border border-white/9 bg-white/4 px-6 py-8 sm:px-10 lg:px-[56px] lg:py-[36px]"
         initial={{ opacity: 0, y: 30 }}

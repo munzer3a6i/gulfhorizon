@@ -73,7 +73,7 @@ function ChannelRow({ channel, first }) {
         <span className="flex min-w-0 flex-1 flex-col gap-[3px] leading-normal">
           <span className="font-body text-[12px] font-medium tracking-[0.96px] text-haze rtl:tracking-normal">{channel.label}</span>
           <span
-            className="font-display text-[17px] font-medium text-white break-words transition-colors duration-300 group-hover:text-gold sm:text-[19px] rtl:text-end"
+            className="font-display text-[16px] font-medium text-white break-words transition-colors duration-300 group-hover:text-gold sm:text-[19px] rtl:text-end"
             {...(channel.ltr ? { dir: 'ltr' } : {})}
           >
             {channel.value}

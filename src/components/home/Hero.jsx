@@ -39,7 +39,7 @@ export default function Hero({ t }) {
   const reduce = useReducedMotion()
   const { scrollYProgress } = useScroll({ target: mediaRef, offset: ['start end', 'end start'] })
   const photoY = useTransform(scrollYProgress, [0, 1], ['-9%', '9%'])
-  const cardY = useTransform(scrollYProgress, [0, 1], [30, -30])
+  const cardY = useTransform(scrollYProgress, [0, 1], [0, -40])
 
   return (
     <section className="relative">

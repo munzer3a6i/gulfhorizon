@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { Fragment, useRef } from 'react'
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion'
 import { BadgeCheck, Globe, MapPin } from 'lucide-react'
 import heroImg from '../../assets/img/about-hero.jpg'
@@ -23,17 +23,19 @@ function Line({ text, delay, className = '' }) {
   return (
     <span className={`block ${className}`}>
       {words.map((w, i) => (
-        <span key={i} className="inline-block overflow-hidden pb-[0.14em] -mb-[0.14em] align-top">
-          <motion.span
-            className="inline-block"
-            initial={reduce ? false : { y: '110%', rotate: 5 }}
-            animate={{ y: '0%', rotate: 0 }}
-            transition={{ duration: 1, delay: delay + i * 0.08, ease: EASE }}
-          >
-            {w}
-          </motion.span>
-          {i < words.length - 1 ? ' ' : ''}
-        </span>
+        <Fragment key={i}>
+          <span className="inline-block overflow-hidden pb-[0.14em] -mb-[0.14em] align-top">
+            <motion.span
+              className="inline-block"
+              initial={reduce ? false : { y: '110%', rotate: 5 }}
+              animate={{ y: '0%', rotate: 0 }}
+              transition={{ duration: 1, delay: delay + i * 0.08, ease: EASE }}
+            >
+              {w}
+            </motion.span>
+          </span>
+          {i < words.length - 1 ? ' ' : null}
+        </Fragment>
       ))}
     </span>
   )

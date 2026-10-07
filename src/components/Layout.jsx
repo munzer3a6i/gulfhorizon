@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import Nav from './Nav.jsx'
 import Footer from './Footer.jsx'
+import Seo from './Seo.jsx'
 import { EASE, ScrollProgress } from '../motion/index.jsx'
 
 /** Scroll to top on navigation, or to the #hash target when present. */
@@ -27,6 +28,7 @@ export default function Layout({ children }) {
   return (
     <div className="relative min-h-screen overflow-x-clip bg-ink">
       <ScrollManager />
+      <Seo />
       <ScrollProgress />
       <Nav />
       <motion.div

@@ -37,7 +37,7 @@ export default {
           city: 'Riyadh',
           roles: 'Waitress · Commi',
           image: 'aboutHero',
-          alt: 'Riyadh skyline at dusk with the Kingdom Centre tower',
+          alt: 'Riyadh skyline with Kingdom Centre — Filipino workers deployed to Saudi Arabia',
         },
         {
           id: 'githa',
@@ -47,7 +47,7 @@ export default {
           city: 'Saudi Arabia',
           roles: 'Chef cook',
           image: 'citySaudi',
-          alt: 'Illuminated towers of a Saudi city at sunset',
+          alt: 'Saudi city towers at sunset — manpower deployment for KSA employers',
         },
         {
           id: 'aswar',
@@ -57,7 +57,7 @@ export default {
           city: 'Saudi Arabia',
           roles: 'CNC lathe · Lamination operators',
           image: 'deploy4',
-          alt: 'Glass office tower against a clear sky',
+          alt: 'Office tower — manufacturing and industrial manpower recruitment for Saudi Arabia',
         },
         {
           id: 'edama',
@@ -67,7 +67,7 @@ export default {
           city: 'Dammam',
           roles: 'CCTV operator',
           image: 'cityPhilippines',
-          alt: 'City skyline over the water at sunset',
+          alt: 'Gulf city skyline — security and facilities staff recruitment for Saudi Arabia',
         },
       ],
     },
@@ -162,7 +162,7 @@ export default {
           city: 'الرياض',
           roles: 'نادلة · مساعد طاهٍ',
           image: 'aboutHero',
-          alt: 'أفق مدينة الرياض عند الغروب مع برج المملكة',
+          alt: 'أفق الرياض وبرج المملكة — عمالة فلبينية مستقدمة للسعودية',
         },
         {
           id: 'githa',
@@ -172,7 +172,7 @@ export default {
           city: 'المملكة العربية السعودية',
           roles: 'طاهٍ',
           image: 'citySaudi',
-          alt: 'أبراج مضيئة في مدينة سعودية عند الغروب',
+          alt: 'أبراج مدينة سعودية عند الغروب — توريد العمالة لأصحاب العمل في المملكة',
         },
         {
           id: 'aswar',
@@ -182,7 +182,7 @@ export default {
           city: 'المملكة العربية السعودية',
           roles: 'مخارط CNC · مشغلو آلات التغليف',
           image: 'deploy4',
-          alt: 'برج مكاتب زجاجي في سماء صافية',
+          alt: 'برج مكاتب — استقدام عمالة المصانع والصناعة للسعودية',
         },
         {
           id: 'edama',
@@ -192,7 +192,7 @@ export default {
           city: 'الدمام',
           roles: 'مشغل كاميرات مراقبة',
           image: 'cityPhilippines',
-          alt: 'أفق مدينة على الماء عند الغروب',
+          alt: 'أفق مدينة خليجية — استقدام عمالة الأمن والمرافق للسعودية',
         },
       ],
     },

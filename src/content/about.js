@@ -13,7 +13,7 @@ export default {
       lead: 'Gulf Horizon International Services, Inc. is an accredited private placement agency licensed by the DMW (formerly POEA), giving employers access to the best the Philippine labor market can offer — across all skills and job categories.',
       body: 'We have deployed doctors, nurses and physical therapists to hospitals and clinics across the Middle East, along with engineers, architects and skilled, semi-skilled, maintenance and construction workers for principals throughout Saudi Arabia and the Gulf.',
       badges: ['DMW licensed agency', 'Head office in Manila'],
-      imageAlt: 'Riyadh skyline at dusk with the Kingdom Centre tower',
+      imageAlt: 'Riyadh skyline with Kingdom Centre — Filipino workers deployed to Saudi Arabia',
       glass: { title: 'Deploying across the Gulf', detail: 'Saudi Arabia · UAE · Qatar · Kuwait · Bahrain' },
     },
     missionVision: [
@@ -32,7 +32,7 @@ export default {
       eyebrow: 'OUR PEOPLE',
       title: 'The team behind every placement',
       description: 'A tested, proficient team with years of recruitment experience — delivering the labor our employers need in almost every category, from unskilled to professional.',
-      photoAlt: 'The Gulf Horizon team gathered at the Manila head office',
+      photoAlt: 'The Gulf Horizon recruitment team at the DMW-licensed Manila head office',
       caption: { title: 'The Gulf Horizon team', detail: 'Manila head office, Ermita' },
       leader: {
         eyebrow: 'LEADERSHIP',
@@ -75,12 +75,12 @@ export default {
       saudi: {
         name: 'Saudi Arabia',
         detail: 'Riyadh · Jeddah · Dammam · Al Khobar · Tabuk · Makkah · Madinah',
-        imageAlt: 'Riyadh towers lit at dusk',
+        imageAlt: 'Riyadh towers at dusk — Saudi Arabia, our main market for Filipino manpower',
       },
       philippines: {
         name: 'The Philippines',
         detail: 'Manila head office · 5 regional branches',
-        imageAlt: 'Manila skyline at sunset',
+        imageAlt: 'Manila skyline at sunset — home of our DMW-licensed recruitment head office',
       },
       routeLabel: 'Deployment route from the Philippines to Saudi Arabia',
       foundation: {
@@ -160,7 +160,7 @@ export default {
       lead: 'أفق الخليج للخدمات العالمية وكالة توظيف خاصة معتمدة ومرخّصة من إدارة العمال المهاجرين (POEA سابقًا)، تتيح لأصحاب العمل الوصول إلى أفضل ما يقدمه سوق العمالة الفلبينية — في جميع المهارات والتخصصات.',
       body: 'استقدمنا أطباء وممرضين وأخصائيي علاج طبيعي لمستشفيات وعيادات في أنحاء الشرق الأوسط، إلى جانب مهندسين ومعماريين وعمال مهرة وشبه مهرة وعمال صيانة وإنشاءات لعملائنا في المملكة العربية السعودية ودول الخليج.',
       badges: ['وكالة مرخّصة من DMW', 'المكتب الرئيسي في مانيلا'],
-      imageAlt: 'أفق مدينة الرياض عند الغروب مع برج المملكة',
+      imageAlt: 'أفق الرياض وبرج المملكة — عمالة فلبينية مستقدمة للسعودية',
       glass: { title: 'نستقدم لدول الخليج', detail: 'السعودية · الإمارات · قطر · الكويت · البحرين' },
     },
     missionVision: [
@@ -179,7 +179,7 @@ export default {
       eyebrow: 'فريقنا',
       title: 'الفريق وراء كل عملية استقدام',
       description: 'فريق متمرس وكفء يتمتع بسنوات من الخبرة في الاستقدام — يوفر العمالة التي يحتاجها عملاؤنا في جميع الفئات تقريبًا، من العمالة العادية إلى المهنيين.',
-      photoAlt: 'فريق أفق الخليج في المكتب الرئيسي بمانيلا',
+      photoAlt: 'فريق الاستقدام في أفق الخليج بالمكتب الرئيسي المرخّص في مانيلا',
       caption: { title: 'فريق أفق الخليج', detail: 'المكتب الرئيسي، إرميتا، مانيلا' },
       leader: {
         eyebrow: 'القيادة',
@@ -222,12 +222,12 @@ export default {
       saudi: {
         name: 'المملكة العربية السعودية',
         detail: 'الرياض · جدة · الدمام · الخبر · تبوك · مكة المكرمة · المدينة المنورة',
-        imageAlt: 'أبراج الرياض مضاءة عند الغسق',
+        imageAlt: 'أبراج الرياض عند الغسق — السعودية سوقنا الرئيسي لاستقدام العمالة الفلبينية',
       },
       philippines: {
         name: 'الفلبين',
         detail: 'المكتب الرئيسي في مانيلا · 5 فروع إقليمية',
-        imageAlt: 'أفق مانيلا عند الغروب',
+        imageAlt: 'أفق مانيلا عند الغروب — مقر مكتب الاستقدام الرئيسي المرخّص',
       },
       routeLabel: 'مسار الاستقدام من الفلبين إلى السعودية',
       foundation: {

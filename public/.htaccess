@@ -1,9 +1,35 @@
-# Hostinger / Apache: serve index.html for client-side routes
+# Hostinger / Apache
+<IfModule mod_dir.c>
+  # /ar is both a page (ar.html) and a folder; don't redirect it to /ar/
+  DirectorySlash Off
+</IfModule>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+
+  # Force HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Drop trailing slashes (except the root) so each page has one URL
+  RewriteCond %{REQUEST_URI} !^/$
+  RewriteRule ^(.+)/$ /$1 [L,R=301]
+
+  # Pre-rendered pages: /about -> about.html, /ar/about -> ar/about.html
+  RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+  RewriteRule ^(.+)$ /$1.html [L]
+
+  # Everything else falls back to the app shell
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /index.html [L]
+</IfModule>
+
+# HTML is always revalidated (hashed files in /assets are cached long-term by assets/.htaccess)
+<IfModule mod_headers.c>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
 </IfModule>

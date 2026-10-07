@@ -1,0 +1,4 @@
+# Build output in this folder has content hashes in the file names, so it can be cached forever.
+<IfModule mod_headers.c>
+  Header set Cache-Control "public, max-age=31536000, immutable"
+</IfModule>

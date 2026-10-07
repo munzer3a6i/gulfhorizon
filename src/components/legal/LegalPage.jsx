@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, useReducedMotion } from 'framer-motion'
 import { FileText } from 'lucide-react'
@@ -59,10 +58,6 @@ export default function LegalPage({ content, lead }) {
   const legal = useContent(legalContent)
   const reduce = useReducedMotion()
   const [active, scrollTo] = useScrollSpy(page.sections.map((s) => s.id))
-
-  useEffect(() => {
-    if (page.pageTitle) document.title = page.pageTitle
-  }, [page.pageTitle])
 
   return (
     <div className="relative">

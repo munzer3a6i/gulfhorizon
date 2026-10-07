@@ -18,7 +18,7 @@ export default {
       close: 'Close',
     },
     footer: {
-      blurb: 'A DMW-licensed private placement agency deploying skilled Filipino professionals and workers to employers in Saudi Arabia.',
+      blurb: 'A DMW-licensed private placement agency deploying skilled Filipino professionals and workers to employers in Saudi Arabia and across the GCC — UAE, Qatar, Kuwait, Bahrain and Oman.',
       facebook: 'Follow us on Facebook',
       officesTitle: 'OFFICES',
       offices: [
@@ -59,7 +59,7 @@ export default {
       close: 'إغلاق',
     },
     footer: {
-      blurb: 'وكالة توظيف خاصة مرخّصة من إدارة العمال المهاجرين (DMW) تستقدم المهنيين والعمال الفلبينيين المهرة لأصحاب العمل في المملكة العربية السعودية.',
+      blurb: 'وكالة توظيف خاصة مرخّصة من إدارة العمال المهاجرين (DMW) تستقدم المهنيين والعمال الفلبينيين المهرة لأصحاب العمل في المملكة العربية السعودية ودول الخليج — الإمارات وقطر والكويت والبحرين وعُمان.',
       facebook: 'تابعنا على فيسبوك',
       officesTitle: 'مكاتبنا',
       offices: [

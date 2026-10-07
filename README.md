@@ -22,6 +22,13 @@ The contact form posts to [FormSubmit](https://formsubmit.co), so there's no bac
 2. Deploy, then submit the form once. FormSubmit emails that inbox an **activation link**. Click it, and every submission after that is delivered.
 3. Optional: once it's activated, FormSubmit gives you a random alias (like `a1b2c3...`). Use that as `FORMSUBMIT_EMAIL` so the real address isn't in the page source.
 
+## SEO
+
+- Titles, descriptions and keywords for every page (English and Arabic) are in `src/content/seo.js`, along with the business details used for Google's structured data (EmploymentAgency schema: address, branches, license, countries served).
+- At build time every URL gets its own pre-rendered `<head>`: title, meta description, keywords, canonical, `hreflang` EN/AR alternates, Open Graph and Twitter cards, and JSON-LD. The build also writes `sitemap.xml` and `robots.txt`.
+- **Set your live domain** in `SITE_URL_DEFAULT` in `src/content/seo.js`, or with the env var `VITE_SITE_URL` (e.g. `https://gulfhorizon.net`). Canonical links, the sitemap and share images all use it.
+- After going live, submit `https://<your-domain>/sitemap.xml` in Google Search Console and Bing Webmaster Tools.
+
 ## Deploy
 
 ### Vercel
@@ -29,7 +36,7 @@ Import the repo in Vercel. It detects Vite on its own: build command `npm run bu
 
 ### Hostinger (or any Apache host)
 1. Run `npm run build`.
-2. Upload **the contents of** `dist/` to `public_html/`. Include the hidden `.htaccess` file, which comes from `public/.htaccess` and handles client-side routes.
+2. Upload **the contents of** `dist/` to `public_html/`. Include the hidden `.htaccess` files (root and `assets/`). They map clean URLs like `/ar/about` to the pre-rendered pages, force HTTPS and set caching.
 
 ## Project layout
 

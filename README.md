@@ -34,6 +34,8 @@ The contact form posts to [FormSubmit](https://formsubmit.co), so there's no bac
 ### Vercel
 Import the repo in Vercel. It detects Vite on its own: build command `npm run build`, output directory `dist`. `vercel.json` already rewrites every route to `index.html`, so deep links like `/ar/contact` work.
 
+**Analytics:** Vercel Web Analytics is built in (`@vercel/analytics`). Turn it on in the Vercel project under **Analytics → Enable**, and page views for every EN and AR page start showing after the next deploy. On other hosts it stays inactive and does no harm.
+
 ### Hostinger (or any Apache host)
 1. Run `npm run build`.
 2. Upload **the contents of** `dist/` to `public_html/`. Include the hidden `.htaccess` files (root and `assets/`). They map clean URLs like `/ar/about` to the pre-rendered pages, force HTTPS and set caching.

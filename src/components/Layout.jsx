@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { Analytics } from '@vercel/analytics/react'
 import Nav from './Nav.jsx'
 import Footer from './Footer.jsx'
 import Seo from './Seo.jsx'
@@ -51,6 +52,7 @@ export default function Layout({ children }) {
       </motion.main>
       <Footer />
       <WhatsAppButton />
+      <Analytics route={pathname} path={pathname} />
     </div>
   )
 }

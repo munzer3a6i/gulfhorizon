@@ -50,7 +50,7 @@ export default {
       link: 'Request this category',
       cards: [
         { tag: 'CATEGORY 02', image: 'hotel', title: 'Hospitality & F&B', roles: 'Waitresses · Commis · Chef cooks · Baristas · Housekeeping', alt: 'Hotel lobby — Filipino hospitality and F&B staff recruitment for Saudi hotels' },
-        { tag: 'CATEGORY 03', image: 'hospital', title: 'Medicine Hospital Staff', roles: 'Staff nurses · Caregivers · Medical aides', alt: 'Filipino nurse caring for an elderly patient — nurses and caregivers recruitment for Saudi Arabia' },
+        { tag: 'CATEGORY 03', image: 'hospital', title: 'Healthcare & Care', roles: 'Medicine hospital staff · Staff nurses · Caregivers · Medical aides', alt: 'Filipino nurse caring for an elderly patient — nurses and caregivers recruitment for Saudi Arabia' },
         { tag: 'CATEGORY 04', image: 'drivers', title: 'Drivers & Logistics', roles: 'Family drivers · Heavy-vehicle drivers · Warehouse staff', alt: 'Car before the Riyadh skyline — Filipino family and heavy-vehicle drivers recruitment for KSA' },
       ],
     },
@@ -150,7 +150,7 @@ export default {
       link: 'اطلب هذه الفئة',
       cards: [
         { tag: 'الفئة 02', image: 'hotel', title: 'الضيافة والأغذية والمشروبات', roles: 'نادلات · مساعدو طهاة · طهاة · باريستا · تدبير منزلي', alt: 'ردهة فندق — استقدام عمالة فلبينية للفنادق والمطاعم في السعودية' },
-        { tag: 'الفئة 03', image: 'hospital', title: 'الطواقم الطبية في المستشفيات', roles: 'ممرضون · مقدمو رعاية · مساعدون طبيون', alt: 'ممرضة فلبينية تعتني بمريض مسن — استقدام ممرضات ومقدمي رعاية للسعودية' },
+        { tag: 'الفئة 03', image: 'hospital', title: 'الرعاية الصحية والتمريض', roles: 'الطواقم الطبية في المستشفيات · ممرضون · مقدمو رعاية · مساعدون طبيون', alt: 'ممرضة فلبينية تعتني بمريض مسن — استقدام ممرضات ومقدمي رعاية للسعودية' },
         { tag: 'الفئة 04', image: 'drivers', title: 'السائقون والخدمات اللوجستية', roles: 'سائقو عائلات · سائقو معدات ثقيلة · عمال مستودعات', alt: 'سيارة أمام أفق الرياض — استقدام سائقين فلبينيين للعائلات والمعدات الثقيلة' },
       ],
     },

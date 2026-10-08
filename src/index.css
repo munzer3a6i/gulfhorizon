@@ -7,7 +7,7 @@
   /* Fonts — swapped per language via the variables below */
   --font-display: var(--gh-font-display);
   --font-body: var(--gh-font-body);
-  --font-arabic: "Cairo", "Tajawal", system-ui, sans-serif;
+  --font-arabic: "IBM Plex Sans Arabic", system-ui, sans-serif;
 
   /* Palette (from the Figma file) */
   --color-ink: #071a2e;          /* page background */
@@ -62,8 +62,8 @@
 }
 
 [dir="rtl"] {
-  --gh-font-display: "Alexandria", "Cairo", system-ui, sans-serif;
-  --gh-font-body: "Tajawal", "Cairo", system-ui, sans-serif;
+  --gh-font-display: "IBM Plex Sans Arabic", system-ui, sans-serif;
+  --gh-font-body: "IBM Plex Sans Arabic", system-ui, sans-serif;
 }
 
 html {

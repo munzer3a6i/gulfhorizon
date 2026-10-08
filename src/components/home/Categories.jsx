@@ -73,18 +73,25 @@ function CategoryCard({ card, image, link, className = '' }) {
   const reduce = useReducedMotion()
   return (
     <Tilt max={6} className={`h-full overflow-hidden rounded-[24px] bg-ink-raised ${className}`}>
-      <article className="group relative flex h-full flex-col items-start justify-end gap-[10px] overflow-hidden rounded-[24px] p-[24px] sm:p-[28px]">
+      {/* The in-view trigger sits on the (unclipped) card: an element that starts fully clipped has no
+          visible area, so it would never register as "in view" and the photo would stay hidden. */}
+      <motion.article
+        className="group relative flex h-full flex-col items-start justify-end gap-[10px] overflow-hidden rounded-[24px] p-[24px] sm:p-[28px]"
+        initial={reduce ? false : 'hidden'}
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <motion.div
           className="absolute inset-0"
-          initial={reduce ? false : { clipPath: 'inset(100% 0% 0% 0%)', scale: 1.15 }}
-          whileInView={{ clipPath: 'inset(0% 0% 0% 0%)', scale: 1 }}
-          viewport={{ once: true, margin: '-10%' }}
-          transition={{ duration: 1.2, ease: EASE }}
+          variants={{
+            hidden: { clipPath: 'inset(100% 0% 0% 0%)', scale: 1.15 },
+            show: { clipPath: 'inset(0% 0% 0% 0%)', scale: 1, transition: { duration: 1.2, ease: EASE } },
+          }}
         >
           <img
             src={image}
             alt={card.alt}
-            loading="lazy"
+            decoding="async"
             className="size-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-110"
           />
         </motion.div>
@@ -95,7 +102,7 @@ function CategoryCard({ card, image, link, className = '' }) {
         <h3 className="relative font-display text-[24px] font-medium leading-[1.15] text-white sm:text-[28px]">{card.title}</h3>
         <p className="relative font-body text-[15px] leading-[1.55] text-mist">{card.roles}</p>
         <RequestLink label={link} />
-      </article>
+      </motion.article>
     </Tilt>
   )
 }

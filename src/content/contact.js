@@ -8,13 +8,12 @@ export const MAP_URL = 'https://www.google.com/maps/search/?api=1&query=509+Merc
 
 
 const CATEGORY_VALUES = [
-  'Construction & skilled trades',
-  'Engineering & technical',
-  'Healthcare & caregiving',
-  'Hospitality & food service',
-  'Domestic & household staff',
-  'Drivers & logistics',
-  'Office & administration',
+  'Skilled workers',
+  'Engineering workers',
+  'Factory workers',
+  'Hospital staff',
+  'Hospitality workers',
+  'Hotel & restaurant workers',
   'Other',
 ]
 
@@ -47,7 +46,7 @@ export default {
       title: 'Send a job order',
       description: 'Tell us about the roles you need and our recruitment team will prepare a shortlist of qualified Filipino candidates.',
       fields: {
-        company: { label: 'COMPANY NAME', placeholder: 'Your company or household', required: 'Please enter your company or household name.' },
+        company: { label: 'COMPANY NAME', placeholder: 'Your company name', required: 'Please enter your company name.' },
         contact: { label: 'CONTACT PERSON', placeholder: 'Full name & title', required: 'Please tell us who we should contact.' },
         email: { label: 'EMAIL ADDRESS', placeholder: 'name@company.sa', required: 'Please enter your email address.', invalid: 'That email address doesn’t look right — e.g. name@company.sa' },
         phone: { label: 'PHONE NUMBER', placeholder: '+966', required: 'Please enter a phone number.', invalid: 'Use digits only, with an optional + country code (7–20 characters).' },
@@ -105,7 +104,7 @@ export default {
       title: 'أرسل طلب استقدام',
       description: 'أخبرنا بالوظائف التي تحتاجها، وسيُعد فريق الاستقدام لدينا قائمة مختصرة بمرشحين فلبينيين مؤهلين.',
       fields: {
-        company: { label: 'اسم الشركة', placeholder: 'اسم الشركة أو المنزل', required: 'يرجى إدخال اسم الشركة أو المنزل.' },
+        company: { label: 'اسم الشركة', placeholder: 'اسم شركتك', required: 'يرجى إدخال اسم الشركة.' },
         contact: { label: 'الشخص المسؤول', placeholder: 'الاسم الكامل والمسمى الوظيفي', required: 'يرجى إدخال اسم الشخص المسؤول.' },
         email: { label: 'البريد الإلكتروني', placeholder: 'name@company.sa', required: 'يرجى إدخال البريد الإلكتروني.', invalid: 'صيغة البريد الإلكتروني غير صحيحة — مثال: name@company.sa' },
         phone: { label: 'رقم الجوال', placeholder: '+966', required: 'يرجى إدخال رقم الجوال.', invalid: 'استخدم الأرقام فقط مع رمز الدولة (+) اختياريًا (من 7 إلى 20 خانة).' },
@@ -114,13 +113,12 @@ export default {
         details: { label: 'تفاصيل الطلب', placeholder: 'أخبرنا عن الوظائف والجدول الزمني وأي متطلبات خاصة…' },
       },
       categories: [
-        'البناء والحرف الماهرة',
-        'الهندسة والوظائف الفنية',
-        'الرعاية الصحية والتمريض',
-        'الضيافة وخدمات الطعام',
-        'العمالة المنزلية',
-        'السائقون والخدمات اللوجستية',
-        'الأعمال المكتبية والإدارية',
+        'العمالة الماهرة',
+        'العمالة الهندسية',
+        'عمال المصانع',
+        'طواقم المستشفيات',
+        'عمالة الضيافة',
+        'عمالة الفنادق والمطاعم',
         'أخرى',
       ].map((label, i) => ({ value: CATEGORY_VALUES[i], label })),
       workers: [

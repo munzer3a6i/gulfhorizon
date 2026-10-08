@@ -44,8 +44,11 @@ const KEYWORDS_EN = [
   'construction manpower Saudi Arabia',
   'hospitality staffing Saudi Arabia',
   'nurses and caregivers recruitment',
-  'domestic workers recruitment',
-  'drivers recruitment Saudi Arabia',
+  'engineering workers recruitment',
+  'factory workers recruitment',
+  'hospital staff recruitment',
+  'hotel and restaurant staff recruitment',
+  'manpower agency GCC and international',
 ]
 
 const KEYWORDS_AR = [
@@ -62,8 +65,10 @@ const KEYWORDS_AR = [
   'استقدام الإمارات قطر الكويت البحرين عمان',
   'وكالة توظيف مرخصة DMW',
   'استقدام ممرضات',
-  'استقدام سائقين',
-  'استقدام عمالة منزلية',
+  'استقدام عمالة هندسية',
+  'استقدام عمال مصانع',
+  'استقدام طواقم المستشفيات',
+  'استقدام عمالة فنادق ومطاعم',
   'عمالة فنادق ومطاعم',
   'عمالة إنشاءات ومصانع',
 ]
@@ -91,7 +96,7 @@ const SEO = {
       home: {
         title: 'Recruitment Agency Philippines to Saudi Arabia & GCC | Gulf Horizon',
         description:
-          'DMW-licensed Filipino recruitment agency in Manila supplying skilled workers, nurses, hospitality staff, drivers and domestic workers to employers in Saudi Arabia and the Gulf — deployment in 45–60 days.',
+          'DMW-licensed Filipino recruitment agency in Manila supplying skilled, engineering and factory workers, hospital staff, and hospitality, hotel and restaurant workers to employers in the GCC countries and worldwide — deployment in 45–60 days.',
         keywords: ['Filipino manpower for Saudi Arabia', 'manpower agency Philippines', 'Saudi Arabia jobs recruitment'],
       },
       deployments: {
@@ -139,7 +144,7 @@ const SEO = {
       home: {
         title: 'مكتب استقدام عمالة فلبينية للسعودية والخليج | أفق الخليج',
         description:
-          'وكالة استقدام فلبينية مرخّصة من إدارة العمال المهاجرين (DMW) في مانيلا، نوفّر العمالة الماهرة والممرضين وعمال الفنادق والسائقين والعمالة المنزلية لأصحاب العمل في السعودية والخليج خلال 45–60 يومًا.',
+          'وكالة استقدام فلبينية مرخّصة من إدارة العمال المهاجرين (DMW) في مانيلا، نوفّر العمالة الماهرة والهندسية وعمال المصانع وطواقم المستشفيات وعمالة الضيافة والفنادق والمطاعم لأصحاب العمل في دول الخليج العربي ودول أخرى حول العالم خلال 45–60 يومًا.',
         keywords: ['استقدام عمالة من الفلبين للسعودية', 'مكتب استقدام فلبيني', 'توظيف عمالة فلبينية'],
       },
       deployments: {
@@ -230,12 +235,13 @@ export function structuredData(siteUrl, lang) {
         address: { '@type': 'PostalAddress', addressLocality: city, addressCountry: 'PH' },
       })),
       makesOffer: [
-        'Skilled trades & manufacturing workers',
-        'Hospitality & F&B staff',
-        'Nurses, caregivers & healthcare staff',
-        'Domestic & household workers',
-        'Drivers & logistics staff',
-      ].map((name) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: `Recruitment of ${name}`, areaServed: 'Saudi Arabia, GCC' } })),
+        'Skilled workers',
+        'Engineering workers',
+        'Factory workers',
+        'Hospital staff',
+        'Hospitality workers',
+        'Hotel & restaurant workers',
+      ].map((name) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: `Recruitment of ${name}`, areaServed: 'GCC countries & international' } })),
       sameAs: [BUSINESS.facebook],
     },
     {

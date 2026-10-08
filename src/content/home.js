@@ -44,13 +44,13 @@ export default {
       feature: {
         tag: 'CATEGORY 01 · MOST REQUESTED',
         title: 'Skilled Trades & Manufacturing',
-        body: 'Trade-tested at accredited centres before selection — ready for construction sites, factories and plants across the Kingdom.',
+        body: 'Trade-tested at accredited centres before selection — ready for construction sites, factories and plants across the GCC & other international countries.',
         roles: ['Skilled workers', 'Engineering workers', 'Hospitality workers', 'Factory workers', 'Hospital staff', 'Hotel & restaurant workers'],
       },
       link: 'Request this category',
       cards: [
         { tag: 'CATEGORY 02', image: 'hotel', title: 'Hospitality & F&B', roles: 'Waitresses · Commis · Chef cooks · Baristas · Housekeeping', alt: 'Hotel lobby — Filipino hospitality and F&B staff recruitment for Saudi hotels' },
-        { tag: 'CATEGORY 03', image: 'hospital', title: 'Healthcare & Care', roles: 'Staff nurses · Caregivers · Medical aides', alt: 'Filipino nurse caring for an elderly patient — nurses and caregivers recruitment for Saudi Arabia' },
+        { tag: 'CATEGORY 03', image: 'hospital', title: 'Medicine Hospital Staff', roles: 'Staff nurses · Caregivers · Medical aides', alt: 'Filipino nurse caring for an elderly patient — nurses and caregivers recruitment for Saudi Arabia' },
         { tag: 'CATEGORY 04', image: 'drivers', title: 'Drivers & Logistics', roles: 'Family drivers · Heavy-vehicle drivers · Warehouse staff', alt: 'Car before the Riyadh skyline — Filipino family and heavy-vehicle drivers recruitment for KSA' },
       ],
     },
@@ -144,13 +144,13 @@ export default {
       feature: {
         tag: 'الفئة 01 · الأكثر طلبًا',
         title: 'الحرف الماهرة والتصنيع',
-        body: 'مختبرون مهنيًا في مراكز معتمدة قبل الاختيار — جاهزون لمواقع البناء والمصانع والمنشآت في أنحاء المملكة.',
+        body: 'مختبرون مهنيًا في مراكز معتمدة قبل الاختيار — جاهزون لمواقع البناء والمصانع والمنشآت في دول الخليج العربي ودول أخرى حول العالم.',
         roles: ['العمالة الماهرة', 'العمالة الهندسية', 'عمالة الضيافة', 'عمال المصانع', 'طواقم المستشفيات', 'عمالة الفنادق والمطاعم'],
       },
       link: 'اطلب هذه الفئة',
       cards: [
         { tag: 'الفئة 02', image: 'hotel', title: 'الضيافة والأغذية والمشروبات', roles: 'نادلات · مساعدو طهاة · طهاة · باريستا · تدبير منزلي', alt: 'ردهة فندق — استقدام عمالة فلبينية للفنادق والمطاعم في السعودية' },
-        { tag: 'الفئة 03', image: 'hospital', title: 'الرعاية الصحية والتمريض', roles: 'ممرضون · مقدمو رعاية · مساعدون طبيون', alt: 'ممرضة فلبينية تعتني بمريض مسن — استقدام ممرضات ومقدمي رعاية للسعودية' },
+        { tag: 'الفئة 03', image: 'hospital', title: 'الطواقم الطبية في المستشفيات', roles: 'ممرضون · مقدمو رعاية · مساعدون طبيون', alt: 'ممرضة فلبينية تعتني بمريض مسن — استقدام ممرضات ومقدمي رعاية للسعودية' },
         { tag: 'الفئة 04', image: 'drivers', title: 'السائقون والخدمات اللوجستية', roles: 'سائقو عائلات · سائقو معدات ثقيلة · عمال مستودعات', alt: 'سيارة أمام أفق الرياض — استقدام سائقين فلبينيين للعائلات والمعدات الثقيلة' },
       ],
     },

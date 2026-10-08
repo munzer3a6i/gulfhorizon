@@ -2,7 +2,6 @@
 import { LICENSE_NO, PHONE, PHONE_TEL } from './common.js'
 
 const MAPS_URL = 'https://www.google.com/maps/search/?api=1&query=Merchant+Center+Building+Padre+Faura+St+Ermita+Manila'
-const PHONES = '(02) 5302-1952 to 54 · (02) 8522-4174'
 
 export default {
   en: {
@@ -99,8 +98,7 @@ export default {
       body: 'Our Manila head office is open for employer consultations, document handovers and candidate interviews by appointment.',
       details: [
         { icon: 'pin', label: 'HEAD OFFICE', value: '509 Merchant Center Bldg., 3rd Floor, Padre Faura St. cor. Mabini St., Ermita, Manila' },
-        { icon: 'whatsapp', label: 'MAIN NUMBER · WHATSAPP', value: PHONE, href: PHONE_TEL, ltr: true },
-        { icon: 'phone', label: 'OFFICE LINES', value: PHONES, ltr: true },
+        { icon: 'whatsapp', label: 'CALL · WHATSAPP', value: PHONE, href: PHONE_TEL, ltr: true },
         { icon: 'globe', label: 'REGIONAL BRANCHES', value: 'Davao · Iloilo · Pangasinan · Bacolod · Cagayan de Oro' },
       ],
       cta: 'Open in Maps',
@@ -209,8 +207,7 @@ export default {
       body: 'يستقبل مكتبنا الرئيسي في مانيلا أصحاب العمل للاستشارات وتسليم المستندات ومقابلات المرشحين بموعد مسبق.',
       details: [
         { icon: 'pin', label: 'المكتب الرئيسي', value: 'مبنى ميرشانت سنتر 509، الطابق الثالث، شارع بادري فاورا تقاطع شارع مابيني، إرميتا، مانيلا' },
-        { icon: 'whatsapp', label: 'الرقم الرئيسي · واتساب', value: PHONE, href: PHONE_TEL, ltr: true },
-        { icon: 'phone', label: 'هواتف المكتب', value: PHONES, ltr: true },
+        { icon: 'whatsapp', label: 'اتصال · واتساب', value: PHONE, href: PHONE_TEL, ltr: true },
         { icon: 'globe', label: 'الفروع الإقليمية', value: 'دافاو · إيلويلو · بانغاسينان · باكولود · كاغايان دي أورو' },
       ],
       cta: 'افتح في الخرائط',

@@ -11,7 +11,6 @@ export const BUSINESS = {
   nameAr: 'أفق الخليج للخدمات العالمية',
   email: 'info@gulfhorizon.net',
   telephone: '+63-917-888-8970',
-  telephones: ['+63-917-888-8970', '+63-2-5302-1952', '+63-2-5302-1953', '+63-2-5302-1954', '+63-2-8522-4174'],
   license: 'DMW-217-LB-11282023-R',
   address: {
     streetAddress: '509 Merchant Center Bldg., 3rd Floor, Padre Faura St. cor. Mabini St., Ermita',
@@ -208,7 +207,6 @@ export function structuredData(siteUrl, lang) {
       telephone: BUSINESS.telephone,
       contactPoint: [
         { '@type': 'ContactPoint', telephone: BUSINESS.telephone, contactType: 'sales', areaServed: ['SA', 'AE', 'QA', 'KW', 'BH', 'OM'], availableLanguage: ['English', 'Arabic', 'Filipino'], description: 'Main number and WhatsApp' },
-        ...BUSINESS.telephones.slice(1).map((telephone) => ({ '@type': 'ContactPoint', telephone, contactType: 'customer service' })),
       ],
       address: { '@type': 'PostalAddress', ...BUSINESS.address },
       geo: { '@type': 'GeoCoordinates', ...BUSINESS.geo },

@@ -3,14 +3,13 @@ import { motion, useReducedMotion } from 'framer-motion'
 import { Briefcase } from 'lucide-react'
 import cat1 from '../../assets/img/cat-1.jpg'
 import cat2 from '../../assets/img/cat-2.jpg'
-import cat3 from '../../assets/img/cat-3.jpg'
 import cat4 from '../../assets/img/cat-4.jpg'
 import bentoSun from '../../assets/svg/bento-sun.svg'
 import { useLang } from '../../i18n.jsx'
 import { Container, DirArrow, SectionHeader } from '../ui.jsx'
 import { EASE, Stagger, StaggerItem, Tilt } from '../../motion/index.jsx'
 
-const IMAGES = [cat1, cat2, cat3, cat4]
+const IMAGES = { hotel: cat1, hospital: cat2, drivers: cat4 }
 
 function RequestLink({ label, className = '' }) {
   const { to } = useLang()
@@ -128,13 +127,13 @@ export default function Categories({ t }) {
             <FeatureCard f={t.feature} />
           </StaggerItem>
           <StaggerItem className="h-[380px] lg:h-[400px]">
-            <CategoryCard card={first} image={IMAGES[0]} link={t.link} />
+            <CategoryCard card={first} image={IMAGES[first.image]} link={t.link} />
           </StaggerItem>
         </Stagger>
-        <Stagger className="grid gap-[24px] sm:grid-cols-2 lg:grid-cols-3" stagger={0.13}>
-          {rest.map((card, i) => (
-            <StaggerItem key={card.title} className={`h-[360px] ${i === 2 ? 'sm:col-span-2 lg:col-span-1' : ''}`}>
-              <CategoryCard card={card} image={IMAGES[i + 1]} link={t.link} />
+        <Stagger className="grid gap-[24px] sm:grid-cols-2" stagger={0.13}>
+          {rest.map((card) => (
+            <StaggerItem key={card.title} className="h-[360px]">
+              <CategoryCard card={card} image={IMAGES[card.image]} link={t.link} />
             </StaggerItem>
           ))}
         </Stagger>

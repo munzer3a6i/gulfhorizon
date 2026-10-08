@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 import { Globe, Phone } from 'lucide-react'
 import logoMark from '../assets/svg/logo-mark.svg'
-import common, { FACEBOOK_URL, PHONE, WEBSITE } from '../content/common.js'
+import common, { FACEBOOK_URL, PHONE, PHONE_TEL, WEBSITE, whatsappLink } from '../content/common.js'
+import { WhatsAppIcon } from './WhatsAppButton.jsx'
 import { useContent, useLang } from '../i18n.jsx'
 import { Reveal, Stagger, StaggerItem } from '../motion/index.jsx'
 import { Container } from './ui.jsx'
@@ -99,9 +100,13 @@ export default function Footer() {
         <Reveal className="mt-[56px] flex flex-col gap-4 border-t border-white/[0.08] pt-[26px] pb-[32px] md:flex-row md:items-center md:justify-between">
           <p className="font-body text-[14px] text-dusk">{footer.copyright}</p>
           <div className="flex flex-wrap gap-x-[28px] gap-y-2" dir="ltr">
-            <a href="tel:+63253021952" className="flex items-center gap-[8px] font-body text-[14px] text-haze transition-colors hover:text-white">
+            <a href={PHONE_TEL} className="flex items-center gap-[8px] font-body text-[14px] text-haze transition-colors hover:text-white">
               <Phone className="size-[16px] text-gold" strokeWidth={1.8} />
               {PHONE}
+            </a>
+            <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="flex items-center gap-[8px] font-body text-[14px] text-haze transition-colors hover:text-white">
+              <WhatsAppIcon className="size-[16px] text-[#25D366]" />
+              WhatsApp
             </a>
             <a href={`https://${WEBSITE}`} className="flex items-center gap-[8px] font-body text-[14px] text-haze transition-colors hover:text-white">
               <Globe className="size-[16px] text-gold" strokeWidth={1.8} />

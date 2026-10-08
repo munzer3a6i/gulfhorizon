@@ -3,6 +3,7 @@ import { motion, useReducedMotion } from 'framer-motion'
 import { BadgeCheck, FileText, Mail, Phone, ShieldCheck } from 'lucide-react'
 import { useLang } from '../../i18n.jsx'
 import { EASE } from '../../motion/index.jsx'
+import { PHONE_TEL } from '../../content/common.js'
 
 const DOC_ICONS = { license: BadgeCheck, privacy: ShieldCheck, terms: FileText }
 const CARD = 'rounded-[20px] border border-white/[0.09] bg-white/[0.04]'
@@ -96,7 +97,7 @@ export function HelpCard({ help, className = '' }) {
         <Mail className="size-[16px] shrink-0 text-gold" strokeWidth={2} aria-hidden />
         <span dir="ltr">{help.email}</span>
       </a>
-      <a href="tel:+63253021952" className="relative flex w-fit items-center gap-[8px] font-body text-[14px] font-medium text-white transition-colors hover:text-gold">
+      <a href={PHONE_TEL} className="relative flex w-fit items-center gap-[8px] font-body text-[14px] font-medium text-white transition-colors hover:text-gold">
         <Phone className="size-[16px] shrink-0 text-gold" strokeWidth={2} aria-hidden />
         <span dir="ltr">{help.phone}</span>
       </a>

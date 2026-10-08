@@ -1,7 +1,7 @@
 // Contact Us page copy (Figma: EN 133:1015, AR 161:2315).
 // Form option values stay in English in both languages so the FormSubmit inbox reads consistently.
 
-import { LICENSE_NO } from './common.js'
+import { LICENSE_NO, PHONE, PHONE_TEL, whatsappLink } from './common.js'
 
 export const CONTACT_EMAIL = 'info@gulfhorizon.net'
 export const MAP_URL = 'https://www.google.com/maps/search/?api=1&query=509+Merchant+Center+Bldg+Padre+Faura+St+cor+Mabini+St+Ermita+Manila'
@@ -36,6 +36,8 @@ export default {
       mapLabel: 'View on map',
     },
     channels: [
+      { key: 'mobile', icon: 'phone', label: 'MAIN NUMBER', value: PHONE, href: PHONE_TEL, ltr: true },
+      { key: 'whatsapp', icon: 'whatsapp', label: 'WHATSAPP', value: PHONE, note: 'Message us any time', href: whatsappLink('Hello Gulf Horizon, I’d like to hire Filipino workers. Can you help?'), external: true, ltr: true },
       { key: 'main', icon: 'phone', label: 'MANILA OFFICE', value: PHONE_MAIN, href: 'tel:+63253021952', ltr: true },
       { key: 'alt', icon: 'phone', label: 'ALTERNATE LINE', value: PHONE_ALT, href: 'tel:+63285224174', ltr: true },
       { key: 'email', icon: 'mail', label: 'EMAIL', value: CONTACT_EMAIL, href: `mailto:${CONTACT_EMAIL}`, ltr: true },
@@ -94,6 +96,8 @@ export default {
       mapLabel: 'عرض على الخريطة',
     },
     channels: [
+      { key: 'mobile', icon: 'phone', label: 'الرقم الرئيسي', value: PHONE, href: PHONE_TEL, ltr: true },
+      { key: 'whatsapp', icon: 'whatsapp', label: 'واتساب', value: PHONE, note: 'راسلنا في أي وقت', href: whatsappLink('مرحبًا أفق الخليج، أرغب في استقدام عمالة فلبينية. هل يمكنكم المساعدة؟'), external: true, ltr: true },
       { key: 'main', icon: 'phone', label: 'مكتب مانيلا', value: PHONE_MAIN, href: 'tel:+63253021952', ltr: true },
       { key: 'alt', icon: 'phone', label: 'خط بديل', value: PHONE_ALT, href: 'tel:+63285224174', ltr: true },
       { key: 'email', icon: 'mail', label: 'البريد الإلكتروني', value: CONTACT_EMAIL, href: `mailto:${CONTACT_EMAIL}`, ltr: true },

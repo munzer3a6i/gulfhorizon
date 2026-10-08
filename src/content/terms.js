@@ -100,7 +100,7 @@ export default {
           },
           {
             type: 'p',
-            text: 'We may update these terms from time to time; the latest version will always appear on this page. For any questions, contact us at info@gulfhorizon.net or (02) 5302-1952 to 54.',
+            text: 'We may update these terms from time to time; the latest version will always appear on this page. For any questions, contact us at info@gulfhorizon.net or +63 917 888 8970.',
           },
         ],
       },
@@ -201,7 +201,7 @@ export default {
           },
           {
             type: 'p',
-            text: 'قد نحدّث هذه الشروط من وقت لآخر، وستظهر أحدث نسخة دائمًا في هذه الصفحة. لأي استفسار، تواصل معنا عبر info@gulfhorizon.net أو على الرقم (02) 5302-1952 to 54.',
+            text: 'قد نحدّث هذه الشروط من وقت لآخر، وستظهر أحدث نسخة دائمًا في هذه الصفحة. لأي استفسار، تواصل معنا عبر info@gulfhorizon.net أو على الرقم +63 917 888 8970.',
           },
         ],
       },

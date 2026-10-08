@@ -10,8 +10,8 @@ export const BUSINESS = {
   legalName: 'Gulf Horizon International Services, Inc.',
   nameAr: 'أفق الخليج للخدمات العالمية',
   email: 'info@gulfhorizon.net',
-  telephone: '+63-2-5302-1952',
-  telephones: ['+63-2-5302-1952', '+63-2-5302-1953', '+63-2-5302-1954', '+63-2-8522-4174'],
+  telephone: '+63-917-888-8970',
+  telephones: ['+63-917-888-8970', '+63-2-5302-1952', '+63-2-5302-1953', '+63-2-5302-1954', '+63-2-8522-4174'],
   license: 'DMW-217-LB-11282023-R',
   address: {
     streetAddress: '509 Merchant Center Bldg., 3rd Floor, Padre Faura St. cor. Mabini St., Ermita',
@@ -110,7 +110,7 @@ const SEO = {
       contact: {
         title: 'Send a Job Order — Hire Filipino Workers for Saudi Arabia | Gulf Horizon',
         description:
-          'Request Filipino candidates for your company in Saudi Arabia or the Gulf. Send a job order to our Manila recruitment team and receive a qualified shortlist — call (02) 5302-1952 or email info@gulfhorizon.net.',
+          'Request Filipino candidates for your company in Saudi Arabia or the Gulf. Send a job order to our Manila recruitment team and receive a qualified shortlist — call or WhatsApp +63 917 888 8970 or email info@gulfhorizon.net.',
         keywords: ['send job order', 'hire Filipino workers Saudi Arabia', 'recruitment agency contact Manila'],
       },
       license: {
@@ -158,7 +158,7 @@ const SEO = {
       contact: {
         title: 'أرسل طلب استقدام — استقدم عمالة فلبينية للسعودية | أفق الخليج',
         description:
-          'اطلب مرشحين فلبينيين لشركتك في السعودية أو الخليج. أرسل طلب الاستقدام إلى فريقنا في مانيلا واحصل على قائمة مختصرة بمرشحين مؤهلين — info@gulfhorizon.net.',
+          'اطلب مرشحين فلبينيين لشركتك في السعودية أو الخليج. أرسل طلب الاستقدام إلى فريقنا في مانيلا واحصل على قائمة مختصرة بمرشحين مؤهلين — واتساب ‎+63 917 888 8970 أو info@gulfhorizon.net.',
         keywords: ['طلب استقدام', 'التواصل مع مكتب الاستقدام'],
       },
       license: {
@@ -206,6 +206,10 @@ export function structuredData(siteUrl, lang) {
       image: `${siteUrl}/og-image.jpg`,
       email: BUSINESS.email,
       telephone: BUSINESS.telephone,
+      contactPoint: [
+        { '@type': 'ContactPoint', telephone: BUSINESS.telephone, contactType: 'sales', areaServed: ['SA', 'AE', 'QA', 'KW', 'BH', 'OM'], availableLanguage: ['English', 'Arabic', 'Filipino'], description: 'Main number and WhatsApp' },
+        ...BUSINESS.telephones.slice(1).map((telephone) => ({ '@type': 'ContactPoint', telephone, contactType: 'customer service' })),
+      ],
       address: { '@type': 'PostalAddress', ...BUSINESS.address },
       geo: { '@type': 'GeoCoordinates', ...BUSINESS.geo },
       openingHoursSpecification: {

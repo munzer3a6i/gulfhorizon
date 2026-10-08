@@ -3,6 +3,7 @@ import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion
 import { Users } from 'lucide-react'
 import teamImg from '../../assets/img/team.jpg'
 import leaderImg from '../../assets/img/leader.jpg'
+import presidentImg from '../../assets/img/president.jpg'
 import { Container } from '../ui.jsx'
 import { CountUp, EASE, Reveal, Stagger, StaggerItem, Tilt } from '../../motion/index.jsx'
 import Heading from './Heading.jsx'
@@ -45,17 +46,20 @@ function TeamPhoto({ t }) {
   )
 }
 
-function LeaderCard({ leader }) {
+const LEADER_PHOTOS = { president: presidentImg, leader: leaderImg }
+
+function LeaderCard({ leader, delay = 0 }) {
   const altIsArabic = leader.altLang === 'ar'
   return (
-    <Reveal from="start" className="w-full lg:w-[640px] lg:shrink-0">
-      <Tilt max={5} className="group rounded-[24px]">
-        <article className="flex flex-col overflow-hidden rounded-[24px] border border-white/[0.09] bg-white/[0.04] transition-colors duration-500 group-hover:border-gold/35 sm:flex-row">
-          <div className="relative h-[280px] shrink-0 overflow-hidden sm:h-auto sm:w-[240px]">
+    <Reveal from="start" delay={delay} className="h-full w-full">
+      <Tilt max={5} className="group h-full rounded-[24px]">
+        <article className="flex h-full flex-col overflow-hidden rounded-[24px] border border-white/[0.09] bg-white/[0.04] transition-colors duration-500 group-hover:border-gold/35 sm:flex-row">
+          <div className="relative h-[320px] shrink-0 overflow-hidden sm:h-auto sm:min-h-[298px] sm:w-[240px]">
             <img
-              src={leaderImg}
+              src={LEADER_PHOTOS[leader.photo]}
               alt={leader.photoAlt}
-              className="absolute inset-0 size-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.07]"
+              loading="lazy"
+              className="absolute inset-0 size-full object-cover object-top transition-transform duration-[1200ms] ease-out group-hover:scale-[1.07]"
             />
           </div>
           <div className="flex flex-1 flex-col justify-center gap-[10px] p-6 sm:p-[32px]">
@@ -85,7 +89,7 @@ function Stats({ stats }) {
         return (
           <StaggerItem key={s.label} className="h-full">
             <div
-              className={`group relative flex h-full min-h-[170px] flex-col justify-end gap-[8px] overflow-hidden rounded-[24px] p-[28px] transition-transform duration-500 hover:-translate-y-1.5 sm:min-h-[260px] lg:min-h-[300px] ${
+              className={`group relative flex h-full min-h-[170px] flex-col justify-end gap-[8px] overflow-hidden rounded-[24px] p-[28px] transition-transform duration-500 hover:-translate-y-1.5 sm:min-h-[200px] lg:min-h-[220px] ${
                 featured ? 'bg-gold' : 'border border-white/[0.09] bg-white/[0.04] hover:border-sky/30'
               }`}
             >
@@ -112,10 +116,12 @@ export default function Team({ t }) {
     <Container as="section" className="flex flex-col gap-[40px] pb-20 lg:pb-[120px]">
       <Heading eyebrow={t.eyebrow} title={t.title} description={t.description} />
       <TeamPhoto t={t} />
-      <div className="flex flex-col gap-[24px] lg:flex-row lg:items-stretch">
-        <LeaderCard leader={t.leader} />
-        <Stats stats={t.stats} />
+      <div className="grid gap-[24px] lg:grid-cols-2">
+        {t.leaders.map((leader, i) => (
+          <LeaderCard key={leader.name} leader={leader} delay={i * 0.12} />
+        ))}
       </div>
+      <Stats stats={t.stats} />
     </Container>
   )
 }

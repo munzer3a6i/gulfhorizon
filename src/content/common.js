@@ -1,7 +1,12 @@
 // Copy shared by every page: navigation, footer and the closing CTA banner.
 
 export const LICENSE_NO = 'DMW-217-LB-11282023-R'
-export const PHONE = '(02) 5302-1952 to 54'
+/** Main number — also the WhatsApp line. */
+export const PHONE = '+63 917 888 8970'
+export const PHONE_TEL = 'tel:+639178888970'
+export const WHATSAPP_NUMBER = '639178888970'
+/** Opens a WhatsApp chat with the main number, with an optional pre-filled message. */
+export const whatsappLink = (text) => `https://wa.me/${WHATSAPP_NUMBER}${text ? `?text=${encodeURIComponent(text)}` : ''}`
 export const WEBSITE = 'gulfhorizonservices.com'
 export const FACEBOOK_URL = 'https://www.facebook.com/'
 
@@ -39,6 +44,11 @@ export default {
         { label: 'Terms of Use', to: '/terms' },
       ],
       copyright: `© 2026 Gulf Horizon International Services, Inc. · DMW License No. ${LICENSE_NO}`,
+    },
+    whatsapp: {
+      label: 'Chat with us on WhatsApp',
+      short: 'WhatsApp',
+      message: 'Hello Gulf Horizon, I’d like to hire Filipino workers. Can you help?',
     },
     cta: {
       heading: 'Ready to see what’s on your horizon?',
@@ -80,6 +90,11 @@ export default {
         { label: 'شروط الاستخدام', to: '/terms' },
       ],
       copyright: `© 2026 أفق الخليج للخدمات العالمية · رقم ترخيص DMW: ${LICENSE_NO}`,
+    },
+    whatsapp: {
+      label: 'تواصل معنا عبر واتساب',
+      short: 'واتساب',
+      message: 'مرحبًا أفق الخليج، أرغب في استقدام عمالة فلبينية. هل يمكنكم المساعدة؟',
     },
     cta: {
       heading: 'هل أنت مستعد لاكتشاف ما ينتظرك في الأفق؟',

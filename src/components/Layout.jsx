@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import Nav from './Nav.jsx'
 import Footer from './Footer.jsx'
 import Seo from './Seo.jsx'
+import WhatsAppButton from './WhatsAppButton.jsx'
 import { EASE, ScrollProgress } from '../motion/index.jsx'
 
 /** Scroll to top on navigation, or to the #hash target when present. */
@@ -49,6 +50,7 @@ export default function Layout({ children }) {
         {children}
       </motion.main>
       <Footer />
+      <WhatsAppButton />
     </div>
   )
 }

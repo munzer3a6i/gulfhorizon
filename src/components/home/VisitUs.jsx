@@ -4,8 +4,9 @@ import glowLower from '../../assets/svg/glow-lower.svg'
 import mapHalo from '../../assets/svg/map-halo.svg'
 import { Button, Container, Eyebrow } from '../ui.jsx'
 import { EASE, Glow, Reveal, SplitText, Stagger, StaggerItem } from '../../motion/index.jsx'
+import { WhatsAppIcon } from '../WhatsAppButton.jsx'
 
-const DETAIL_ICONS = [MapPin, Phone, Globe]
+const DETAIL_ICONS = { pin: MapPin, phone: Phone, globe: Globe, whatsapp: WhatsAppIcon }
 
 // Stylised street map, in the 600 x 480 coordinate space of the Figma "Map" frame.
 const STREETS = [
@@ -162,8 +163,8 @@ export default function VisitUs({ t }) {
             <p className="font-body text-[17px] leading-[1.58] text-haze">{t.body}</p>
           </Reveal>
           <Stagger as="ul" className="flex w-full flex-col" stagger={0.12} delay={0.2}>
-            {t.details.map((d, i) => {
-              const Icon = DETAIL_ICONS[i]
+            {t.details.map((d) => {
+              const Icon = DETAIL_ICONS[d.icon] ?? Phone
               return (
                 <StaggerItem as="li" key={d.label} from="start" className="group flex items-center gap-[16px] border-t border-white/8 py-[18px]">
                   <span className="flex size-[44px] shrink-0 items-center justify-center rounded-[12px] bg-gold/14 text-gold transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-6">
@@ -171,7 +172,17 @@ export default function VisitUs({ t }) {
                   </span>
                   <div className="flex min-w-0 flex-1 flex-col gap-[4px] font-body font-medium">
                     <p className="text-[12px] tracking-[0.96px] text-haze rtl:tracking-normal">{d.label}</p>
-                    <p className="text-[16px] leading-[1.5] text-white">{d.ltr ? <span dir="ltr">{d.value}</span> : d.value}</p>
+                    <p className="text-[16px] leading-[1.5] text-white">
+                      {d.href ? (
+                        <a href={d.href} dir={d.ltr ? 'ltr' : undefined} className="transition-colors hover:text-gold">
+                          {d.value}
+                        </a>
+                      ) : d.ltr ? (
+                        <span dir="ltr">{d.value}</span>
+                      ) : (
+                        d.value
+                      )}
+                    </p>
                   </div>
                 </StaggerItem>
               )

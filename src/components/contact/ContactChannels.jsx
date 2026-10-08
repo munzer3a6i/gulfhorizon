@@ -6,6 +6,7 @@ import { MAP_URL } from '../../content/contact.js'
 import { useLang } from '../../i18n.jsx'
 import { EASE, Reveal, Stagger, StaggerItem, Tilt } from '../../motion/index.jsx'
 import { DirArrow } from '../ui.jsx'
+import { WhatsAppIcon } from '../WhatsAppButton.jsx'
 
 function FacebookIcon({ className, style }) {
   return (
@@ -15,7 +16,7 @@ function FacebookIcon({ className, style }) {
   )
 }
 
-const ICONS = { phone: Phone, mail: Mail, facebook: FacebookIcon }
+const ICONS = { phone: Phone, mail: Mail, facebook: FacebookIcon, whatsapp: WhatsAppIcon }
 
 const glass = 'border border-white/[0.09] bg-white/[0.04] rounded-[24px]'
 
@@ -59,7 +60,7 @@ function OfficeCard({ office }) {
 function ChannelRow({ channel, first }) {
   const Icon = ICONS[channel.icon]
   const href = channel.facebook ? FACEBOOK_URL : channel.href
-  const external = channel.facebook
+  const external = channel.facebook || channel.external
   return (
     <StaggerItem as="li" from="start" className={first ? '' : 'border-t border-white/[0.08]'}>
       <a

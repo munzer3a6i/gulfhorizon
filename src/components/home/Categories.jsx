@@ -1,56 +1,16 @@
 import { Link } from 'react-router-dom'
 import { motion, useReducedMotion } from 'framer-motion'
-import { DraftingCompass, Factory, HardHat } from 'lucide-react'
+import { Briefcase } from 'lucide-react'
 import cat1 from '../../assets/img/cat-1.jpg'
 import cat2 from '../../assets/img/cat-2.jpg'
 import cat3 from '../../assets/img/cat-3.jpg'
+import cat4 from '../../assets/img/cat-4.jpg'
 import bentoSun from '../../assets/svg/bento-sun.svg'
 import { useLang } from '../../i18n.jsx'
 import { Container, DirArrow, SectionHeader } from '../ui.jsx'
 import { EASE, Stagger, StaggerItem, Tilt } from '../../motion/index.jsx'
 
-const IMAGES = { hotel: cat1, hospital: cat2, hospitality: cat3 }
-const ICONS = { skilled: HardHat, engineering: DraftingCompass, factory: Factory }
-
-/** Role chips that pop in one after another. `tone` matches the card background. */
-function RoleChips({ roles, tone = 'gold' }) {
-  const chip =
-    tone === 'gold'
-      ? 'bg-white/55 text-navy hover:bg-white/85'
-      : 'border border-white/12 bg-white/[0.06] text-white hover:border-gold/50 hover:bg-gold/15'
-  return (
-    <Stagger as="ul" className="relative flex flex-wrap gap-[10px]" stagger={0.06} delay={0.35}>
-      {roles.map((r) => (
-        <StaggerItem as="li" key={r} from="scale">
-          <motion.span
-            className={`inline-block cursor-default rounded-[99px] px-[14px] py-[8px] font-body text-[14px] font-medium transition-colors duration-300 ${chip}`}
-            whileHover={{ y: -3, scale: 1.04 }}
-            transition={{ type: 'spring', stiffness: 400, damping: 18 }}
-          >
-            {r}
-          </motion.span>
-        </StaggerItem>
-      ))}
-    </Stagger>
-  )
-}
-
-function IconTile({ icon, tone = 'gold' }) {
-  const reduce = useReducedMotion()
-  const Icon = ICONS[icon]
-  return (
-    <motion.span
-      className={`flex size-[56px] shrink-0 items-center justify-center rounded-[18px] sm:size-[64px] ${tone === 'gold' ? 'bg-navy text-gold' : 'bg-gold text-navy'}`}
-      initial={reduce ? false : { scale: 0, rotate: -30 }}
-      whileInView={{ scale: 1, rotate: 0 }}
-      whileHover={{ rotate: [0, -10, 8, 0], scale: 1.08 }}
-      viewport={{ once: true }}
-      transition={{ type: 'spring', stiffness: 260, damping: 14, delay: 0.3 }}
-    >
-      <Icon className="size-[26px] sm:size-[30px]" strokeWidth={1.8} aria-hidden />
-    </motion.span>
-  )
-}
+const IMAGES = [cat1, cat2, cat3, cat4]
 
 function RequestLink({ label, className = '' }) {
   const { to } = useLang()
@@ -107,11 +67,11 @@ function CategoryCard({ card, image, link, className = '' }) {
   )
 }
 
-function FeatureCard({ f, link }) {
+function FeatureCard({ f }) {
   const reduce = useReducedMotion()
   return (
     <Tilt max={4} className="h-full overflow-hidden rounded-[24px]">
-      <article className="relative flex h-full min-h-[380px] flex-col justify-between gap-10 overflow-hidden rounded-[24px] bg-gold p-[24px] sm:p-[40px]">
+      <article className="relative flex h-full min-h-[400px] flex-col justify-between gap-10 overflow-hidden rounded-[24px] bg-gold p-[24px] sm:p-[40px]">
         <motion.div
           aria-hidden
           className="pointer-events-none absolute -top-[150px] start-[40%] size-[420px] lg:start-[560px]"
@@ -127,59 +87,54 @@ function FeatureCard({ f, link }) {
             <h3 className="font-display text-[28px] font-medium leading-[1.12] tracking-[-0.18px] text-navy sm:text-[36px] rtl:tracking-normal">{f.title}</h3>
             <p className="max-w-[460px] font-body text-[16px] leading-[1.55] text-gold-ink">{f.body}</p>
           </div>
-          <IconTile icon={f.icon} />
+          <motion.span
+            className="flex size-[56px] shrink-0 items-center justify-center rounded-[18px] bg-navy text-gold sm:size-[64px]"
+            initial={reduce ? false : { scale: 0, rotate: -30 }}
+            whileInView={{ scale: 1, rotate: 0 }}
+            whileHover={{ rotate: [0, -10, 8, 0], scale: 1.08 }}
+            viewport={{ once: true }}
+            transition={{ type: 'spring', stiffness: 260, damping: 14, delay: 0.3 }}
+          >
+            <Briefcase className="size-[26px] sm:size-[30px]" strokeWidth={1.8} aria-hidden />
+          </motion.span>
         </div>
 
-        <div className="relative flex flex-col items-start gap-5">
-          <RoleChips roles={f.roles} />
-          <RequestLink label={link} className="!text-navy hover:!text-navy/75" />
-        </div>
-      </article>
-    </Tilt>
-  )
-}
-
-/** Dark category card with an icon and role chips (Engineering, Factory). */
-function RolesCard({ card, link }) {
-  return (
-    <Tilt max={5} className="h-full overflow-hidden rounded-[24px]">
-      <article className="group relative flex h-full flex-col justify-between gap-8 overflow-hidden rounded-[24px] border border-white/[0.09] bg-ink-raised p-[24px] transition-colors duration-500 hover:border-gold/40 sm:p-[28px]">
-        <span aria-hidden className="pointer-events-none absolute -top-24 -end-24 size-64 rounded-full bg-sky/[0.08] blur-2xl transition-transform duration-700 group-hover:scale-150" />
-        <div className="relative flex items-start justify-between gap-5">
-          <div className="flex flex-col items-start gap-[12px]">
-            <span className="rounded-[99px] border border-white/20 bg-white/[0.08] px-[12px] py-[5px] font-body text-[12px] font-medium tracking-[0.96px] text-white rtl:tracking-normal">{card.tag}</span>
-            <h3 className="font-display text-[24px] font-medium leading-[1.15] text-white sm:text-[28px]">{card.title}</h3>
-            <p className="font-body text-[15px] leading-[1.55] text-haze">{card.body}</p>
-          </div>
-          <IconTile icon={card.icon} tone="dark" />
-        </div>
-        <div className="relative flex flex-col items-start gap-4">
-          <RoleChips roles={card.roles} tone="dark" />
-          <RequestLink label={link} />
-        </div>
+        <Stagger as="ul" className="relative flex flex-wrap gap-[10px]" stagger={0.06} delay={0.35}>
+          {f.roles.map((r) => (
+            <StaggerItem as="li" key={r} from="scale">
+              <motion.span
+                className="inline-block cursor-default rounded-[99px] bg-white/55 px-[14px] py-[8px] font-body text-[14px] font-medium text-navy transition-colors duration-300 hover:bg-white/85"
+                whileHover={{ y: -3, scale: 1.04 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 18 }}
+              >
+                {r}
+              </motion.span>
+            </StaggerItem>
+          ))}
+        </Stagger>
       </article>
     </Tilt>
   )
 }
 
 export default function Categories({ t }) {
-  const [feature, engineering, ...rest] = t.items
-  const renderCard = (card) =>
-    card.kind === 'roles' ? <RolesCard card={card} link={t.link} /> : <CategoryCard card={card} image={IMAGES[card.image]} link={t.link} />
+  const [first, ...rest] = t.cards
   return (
     <Container as="section" id="categories" className="flex scroll-mt-[110px] flex-col gap-10 pb-20 lg:gap-[48px] lg:pb-[120px]">
       <SectionHeader eyebrow={t.eyebrow} title={t.title} description={t.description} />
       <div className="flex flex-col gap-[24px]">
         <Stagger className="grid gap-[24px] lg:grid-cols-[minmax(0,1fr)_minmax(0,428px)]" stagger={0.15}>
           <StaggerItem>
-            <FeatureCard f={feature} link={t.link} />
+            <FeatureCard f={t.feature} />
           </StaggerItem>
-          <StaggerItem className="min-h-[340px]">{renderCard(engineering)}</StaggerItem>
+          <StaggerItem className="h-[380px] lg:h-[400px]">
+            <CategoryCard card={first} image={IMAGES[0]} link={t.link} />
+          </StaggerItem>
         </Stagger>
-        <Stagger className="grid gap-[24px] sm:grid-cols-2 xl:grid-cols-4" stagger={0.13}>
-          {rest.map((card) => (
-            <StaggerItem key={card.title} className="min-h-[360px]">
-              {renderCard(card)}
+        <Stagger className="grid gap-[24px] sm:grid-cols-2 lg:grid-cols-3" stagger={0.13}>
+          {rest.map((card, i) => (
+            <StaggerItem key={card.title} className={`h-[360px] ${i === 2 ? 'sm:col-span-2 lg:col-span-1' : ''}`}>
+              <CategoryCard card={card} image={IMAGES[i + 1]} link={t.link} />
             </StaggerItem>
           ))}
         </Stagger>

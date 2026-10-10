@@ -9,7 +9,7 @@ export const SITE_URL_DEFAULT = 'https://gulfhorizon.net'
 export const BUSINESS = {
   legalName: 'Gulf Horizon International Services, Inc.',
   nameAr: 'أفق الخليج للخدمات العالمية',
-  email: 'info@gulfhorizon.net',
+  email: 'contact@gulfhorizon.net',
   telephone: '+63-917-888-8970',
   license: 'DMW-217-LB-11282023-R',
   address: {
@@ -114,7 +114,7 @@ const SEO = {
       contact: {
         title: 'Send a Job Order — Hire Filipino Workers for Saudi Arabia | Gulf Horizon',
         description:
-          'Request Filipino candidates for your company in Saudi Arabia or the Gulf. Send a job order to our Manila recruitment team and receive a qualified shortlist — call or WhatsApp +63 917 888 8970 or email info@gulfhorizon.net.',
+          'Request Filipino candidates for your company in Saudi Arabia or the Gulf. Send a job order to our Manila recruitment team and receive a qualified shortlist — call or WhatsApp +63 917 888 8970 or email contact@gulfhorizon.net.',
         keywords: ['send job order', 'hire Filipino workers Saudi Arabia', 'recruitment agency contact Manila'],
       },
       license: {
@@ -162,7 +162,7 @@ const SEO = {
       contact: {
         title: 'أرسل طلب استقدام — استقدم عمالة فلبينية للسعودية | أفق الخليج',
         description:
-          'اطلب مرشحين فلبينيين لشركتك في السعودية أو الخليج. أرسل طلب الاستقدام إلى فريقنا في مانيلا واحصل على قائمة مختصرة بمرشحين مؤهلين — واتساب ‎+63 917 888 8970 أو info@gulfhorizon.net.',
+          'اطلب مرشحين فلبينيين لشركتك في السعودية أو الخليج. أرسل طلب الاستقدام إلى فريقنا في مانيلا واحصل على قائمة مختصرة بمرشحين مؤهلين — واتساب ‎+63 917 888 8970 أو contact@gulfhorizon.net.',
         keywords: ['طلب استقدام', 'التواصل مع مكتب الاستقدام'],
       },
       license: {

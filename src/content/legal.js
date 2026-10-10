@@ -2,7 +2,7 @@
 // breadcrumb, sidebar navigation and the "Questions?" help card.
 import { PHONE } from './common.js'
 
-export const EMAIL = 'info@gulfhorizon.net'
+export const EMAIL = 'contact@gulfhorizon.net'
 
 export default {
   en: {

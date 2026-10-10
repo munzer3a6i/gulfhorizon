@@ -3,7 +3,7 @@
 
 import { LICENSE_NO, PHONE, PHONE_TEL, whatsappLink } from './common.js'
 
-export const CONTACT_EMAIL = 'info@gulfhorizon.net'
+export const CONTACT_EMAIL = 'contact@gulfhorizon.net'
 export const MAP_URL = 'https://www.google.com/maps/search/?api=1&query=509+Merchant+Center+Bldg+Padre+Faura+St+cor+Mabini+St+Ermita+Manila'
 
 

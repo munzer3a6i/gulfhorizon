@@ -11,10 +11,10 @@ export default {
       alt: 'أفق الخليج للخدمات العالمية',
       altLang: 'ar',
       lead: 'Gulf Horizon International Services, Inc. is an accredited private placement agency licensed by the DMW (formerly POEA), giving employers access to the best the Philippine labor market can offer — across all skills and job categories.',
-      body: 'We have deployed doctors, nurses and physical therapists to hospitals and clinics across the Middle East, along with engineers, architects and skilled, semi-skilled, maintenance and construction workers for principals throughout Saudi Arabia and the Gulf.',
+      body: 'We have deployed doctors, nurses and physical therapists to hospitals and clinics across the Middle East, along with engineers, architects and skilled, semi-skilled, maintenance and construction workers for principals throughout the GCC and worldwide.',
       badges: ['DMW licensed agency', 'Head office in Manila'],
-      imageAlt: 'Riyadh skyline with Kingdom Centre — Filipino workers deployed to Saudi Arabia',
-      glass: { title: 'Deploying across the Gulf', detail: 'Saudi Arabia · UAE · Qatar · Kuwait · Bahrain' },
+      imageAlt: 'Gulf city skyline — Filipino workers deployed across the GCC and worldwide',
+      glass: { title: 'Deploying across the GCC & worldwide', detail: 'GCC countries · International markets' },
     },
     missionVision: [
       {
@@ -42,7 +42,7 @@ export default {
           role: 'President',
           alt: 'أنابيل عبد القادر · الرئيسة',
           altLang: 'ar',
-          bio: 'Leads Gulf Horizon’s recruitment operations and its partnerships with employers across Saudi Arabia and the Gulf.',
+          bio: 'Leads Gulf Horizon’s recruitment operations and its partnerships with employers across the GCC and worldwide.',
           photoAlt: 'Annabelle Abdelgadir, President of Gulf Horizon International Services',
         },
         {
@@ -59,14 +59,14 @@ export default {
       stats: [
         { value: '300+', label: 'Filipino workers placed every month' },
         { value: '77+', label: 'Foreign clients across the Gulf' },
-        { value: '6', label: 'Countries served, led by Saudi Arabia' },
+        { value: '6', label: 'Countries served across the GCC and worldwide' },
       ],
     },
     principles: {
       eyebrow: 'WHAT GUIDES US',
       title: 'Our principles',
       items: [
-        { title: 'Compliance', body: 'Fully licensed by the DMW and aligned with Saudi labour requirements at every stage.' },
+        { title: 'Compliance', body: 'Fully licensed by the DMW and aligned with the labour requirements of every destination country.' },
         { title: 'Integrity', body: 'Transparent fees, honest timelines and ethical practices at the heart of every partnership.' },
         { title: 'Efficiency', body: 'Computerised operations and complete documentation — workers processed in 45 to 60 days.' },
         { title: 'Care', body: 'Accredited skills testing, pre-departure orientation and support for every worker we deploy.' },
@@ -86,19 +86,19 @@ export default {
     footprint: {
       title: 'Global footprint',
       saudi: {
-        name: 'Saudi Arabia',
-        detail: 'Riyadh · Jeddah · Dammam · Al Khobar · Tabuk · Makkah · Madinah',
-        imageAlt: 'Riyadh towers at dusk — Saudi Arabia, our main market for Filipino manpower',
+        name: 'GCC & Worldwide',
+        detail: 'Saudi Arabia · UAE · Qatar · Kuwait · Bahrain · Oman · International',
+        imageAlt: 'Gulf city towers at dusk — the GCC and international markets we deploy Filipino manpower to',
       },
       philippines: {
         name: 'The Philippines',
         detail: 'Manila head office · 5 regional branches',
         imageAlt: 'Manila skyline at sunset — home of our DMW-licensed recruitment head office',
       },
-      routeLabel: 'Deployment route from the Philippines to Saudi Arabia',
+      routeLabel: 'Deployment route from the Philippines to the GCC and worldwide',
       foundation: {
         title: 'Our foundation',
-        body: 'Owned and managed by executives with long-established reputations for integrity and reliability. We deploy to Saudi Arabia and across the Gulf — including the UAE, Qatar, Kuwait and Bahrain.',
+        body: 'Owned and managed by executives with long-established reputations for integrity and reliability. We deploy across the GCC countries and to other international countries.',
         items: [
           { title: 'DMW licensed', detail: `License No. ${LICENSE_NO}` },
           { title: 'Nationwide reach', detail: 'Manila, Davao, Iloilo, Pangasinan, Bacolod & Cagayan de Oro' },
@@ -171,10 +171,10 @@ export default {
       alt: 'Gulf Horizon International Services',
       altLang: 'en',
       lead: 'أفق الخليج للخدمات العالمية وكالة توظيف خاصة معتمدة ومرخّصة من إدارة العمال المهاجرين (POEA سابقًا)، تتيح لأصحاب العمل الوصول إلى أفضل ما يقدمه سوق العمالة الفلبينية — في جميع المهارات والتخصصات.',
-      body: 'استقدمنا أطباء وممرضين وأخصائيي علاج طبيعي لمستشفيات وعيادات في أنحاء الشرق الأوسط، إلى جانب مهندسين ومعماريين وعمال مهرة وشبه مهرة وعمال صيانة وإنشاءات لعملائنا في المملكة العربية السعودية ودول الخليج.',
+      body: 'استقدمنا أطباء وممرضين وأخصائيي علاج طبيعي لمستشفيات وعيادات في أنحاء الشرق الأوسط، إلى جانب مهندسين ومعماريين وعمال مهرة وشبه مهرة وعمال صيانة وإنشاءات لعملائنا في دول الخليج والعالم.',
       badges: ['وكالة مرخّصة من DMW', 'المكتب الرئيسي في مانيلا'],
-      imageAlt: 'أفق الرياض وبرج المملكة — عمالة فلبينية مستقدمة للسعودية',
-      glass: { title: 'نستقدم لدول الخليج', detail: 'السعودية · الإمارات · قطر · الكويت · البحرين' },
+      imageAlt: 'أفق مدينة خليجية — عمالة فلبينية مستقدمة لدول الخليج والعالم',
+      glass: { title: 'نستقدم لدول الخليج والعالم', detail: 'دول الخليج العربي · الأسواق الدولية' },
     },
     missionVision: [
       {
@@ -202,7 +202,7 @@ export default {
           role: 'الرئيسة',
           alt: 'Annabelle Abdelgadir · President',
           altLang: 'en',
-          bio: 'تقود عمليات الاستقدام في أفق الخليج وشراكاتها مع أصحاب العمل في المملكة العربية السعودية ودول الخليج.',
+          bio: 'تقود عمليات الاستقدام في أفق الخليج وشراكاتها مع أصحاب العمل في دول الخليج والعالم.',
           photoAlt: 'أنابيل عبد القادر، رئيسة أفق الخليج للخدمات العالمية',
         },
         {
@@ -219,14 +219,14 @@ export default {
       stats: [
         { value: '300+', label: 'عامل فلبيني يتم توظيفهم شهريًا' },
         { value: '77+', label: 'عميلًا في دول الخليج' },
-        { value: '6', label: 'دول نخدمها، في مقدمتها السعودية' },
+        { value: '6', label: 'دول نخدمها في الخليج والعالم' },
       ],
     },
     principles: {
       eyebrow: 'ما يوجّهنا',
       title: 'مبادئنا',
       items: [
-        { title: 'الالتزام', body: 'مرخّصون بالكامل من DMW وملتزمون بمتطلبات العمل السعودية في كل مرحلة.' },
+        { title: 'الالتزام', body: 'مرخّصون بالكامل من DMW وملتزمون بمتطلبات العمل في كل دولة نستقدم لها.' },
         { title: 'النزاهة', body: 'رسوم شفافة وجداول زمنية صادقة وممارسات أخلاقية في صميم كل شراكة.' },
         { title: 'الكفاءة', body: 'عمليات مؤتمتة ومستندات مكتملة — إنهاء إجراءات العمال خلال 45 إلى 60 يومًا.' },
         { title: 'الرعاية', body: 'اختبارات مهارات معتمدة وتوجيه قبل السفر ودعم لكل عامل نستقدمه.' },
@@ -246,19 +246,19 @@ export default {
     footprint: {
       title: 'حضورنا الدولي',
       saudi: {
-        name: 'المملكة العربية السعودية',
-        detail: 'الرياض · جدة · الدمام · الخبر · تبوك · مكة المكرمة · المدينة المنورة',
-        imageAlt: 'أبراج الرياض عند الغسق — السعودية سوقنا الرئيسي لاستقدام العمالة الفلبينية',
+        name: 'دول الخليج والعالم',
+        detail: 'السعودية · الإمارات · قطر · الكويت · البحرين · عُمان · دول أخرى',
+        imageAlt: 'أبراج مدينة خليجية عند الغسق — دول الخليج والأسواق الدولية التي نستقدم لها العمالة الفلبينية',
       },
       philippines: {
         name: 'الفلبين',
         detail: 'المكتب الرئيسي في مانيلا · 5 فروع إقليمية',
         imageAlt: 'أفق مانيلا عند الغروب — مقر مكتب الاستقدام الرئيسي المرخّص',
       },
-      routeLabel: 'مسار الاستقدام من الفلبين إلى السعودية',
+      routeLabel: 'مسار الاستقدام من الفلبين إلى دول الخليج والعالم',
       foundation: {
         title: 'أساسنا',
-        body: 'تملكها وتديرها قيادات ذات سمعة راسخة في النزاهة والموثوقية. نستقدم للمملكة العربية السعودية ولدول الخليج — بما فيها الإمارات وقطر والكويت والبحرين.',
+        body: 'تملكها وتديرها قيادات ذات سمعة راسخة في النزاهة والموثوقية. نستقدم لدول الخليج العربي ولدول أخرى حول العالم.',
         items: [
           { title: 'مرخّصون من DMW', detail: `رقم الترخيص: ${LICENSE_NO}` },
           { title: 'انتشار في أنحاء الفلبين', detail: 'مانيلا ودافاو وإيلويلو وبانغاسينان وباكولود وكاغايان دي أورو' },

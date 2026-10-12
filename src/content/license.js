@@ -35,8 +35,8 @@ export default {
           {
             type: 'bullets',
             items: [
-              { lead: 'Saudi Arabia', text: ' — our primary market, with principals in Riyadh, Jeddah, Dammam, Al Khobar, Tabuk, Makkah, Madinah and Yanbu' },
-              { lead: 'Other Gulf countries', text: ' — including the UAE, Qatar, Kuwait and Bahrain' },
+              { lead: 'GCC countries', text: ' — Saudi Arabia, the UAE, Qatar, Kuwait, Bahrain and Oman' },
+              { lead: 'Other international countries', text: ' — wherever accredited foreign employers need Filipino talent' },
             ],
           },
         ],
@@ -157,8 +157,8 @@ export default {
           {
             type: 'bullets',
             items: [
-              { lead: 'المملكة العربية السعودية', text: ' — سوقنا الرئيسي، مع عملاء في الرياض وجدة والدمام والخبر وتبوك ومكة المكرمة والمدينة المنورة وينبع' },
-              { lead: 'دول الخليج الأخرى', text: ' — بما فيها الإمارات وقطر والكويت والبحرين' },
+              { lead: 'دول الخليج العربي', text: ' — السعودية والإمارات وقطر والكويت والبحرين وعُمان' },
+              { lead: 'دول أخرى حول العالم', text: ' — أينما احتاج أصحاب العمل الأجانب المعتمدون إلى الكفاءات الفلبينية' },
             ],
           },
         ],

@@ -7,11 +7,11 @@ export default {
       title: 'Previous deployments',
       highlight: ['deployments'],
       description:
-        'A selection of Saudi employers we have recruited for — across hospitality, food production, construction, manufacturing, facilities and security.',
+        'A selection of employers across the GCC and worldwide we have recruited for — across hospitality, food production, construction, manufacturing, facilities and security.',
       cta: 'Start your deployment',
     },
     stats: [
-      { value: '18+', label: 'Years in overseas recruitment' },
+      { value: '25+', label: 'Years in overseas recruitment' },
       { value: '6', label: 'Offices across the Philippines' },
       { value: '45–60', label: 'Days from job order to deployment' },
       { value: '2029', label: 'DMW license valid through', static: true },
@@ -37,7 +37,7 @@ export default {
           city: 'Riyadh',
           roles: 'Waitress · Commi',
           image: 'aboutHero',
-          alt: 'Riyadh skyline with Kingdom Centre — Filipino workers deployed to Saudi Arabia',
+          alt: 'Gulf city skyline — Filipino workers deployed across the GCC and worldwide',
         },
         {
           id: 'githa',
@@ -47,7 +47,7 @@ export default {
           city: 'Saudi Arabia',
           roles: 'Chef cook',
           image: 'citySaudi',
-          alt: 'Saudi city towers at sunset — manpower deployment for KSA employers',
+          alt: 'City towers at sunset — manpower deployment for GCC and international employers',
         },
         {
           id: 'aswar',
@@ -57,7 +57,7 @@ export default {
           city: 'Saudi Arabia',
           roles: 'CNC lathe · Lamination operators',
           image: 'deploy4',
-          alt: 'Office tower — manufacturing and industrial manpower recruitment for Saudi Arabia',
+          alt: 'Office tower — manufacturing and industrial manpower recruitment for the GCC and worldwide',
         },
         {
           id: 'edama',
@@ -67,14 +67,14 @@ export default {
           city: 'Dammam',
           roles: 'CCTV operator',
           image: 'cityPhilippines',
-          alt: 'Gulf city skyline — security and facilities staff recruitment for Saudi Arabia',
+          alt: 'Gulf city skyline — security and facilities staff recruitment for the GCC and worldwide',
         },
       ],
     },
     log: {
       eyebrow: 'Recent job orders',
       title: 'Who we recruit for',
-      note: 'Selected principals in Saudi Arabia',
+      note: 'Selected principals across the GCC',
       columns: { employer: 'Employer', sector: 'Sector', location: 'Location', roles: 'Roles recruited' },
       rows: [
         {
@@ -114,7 +114,7 @@ export default {
         {
           icon: 'plane',
           title: 'Ready to work',
-          text: 'Pre-departure orientation so every worker arrives prepared for life and work in Saudi Arabia.',
+          text: 'Pre-departure orientation so every worker arrives prepared for life and work in the GCC and worldwide.',
         },
       ],
     },
@@ -132,11 +132,11 @@ export default {
       title: 'مشاريع الاستقدام السابقة',
       highlight: ['مشاريع', 'الاستقدام'],
       description:
-        'نخبة من أصحاب العمل في المملكة الذين استقدمنا لهم العمالة — في الضيافة وإنتاج الأغذية والبناء والتصنيع والمرافق والأمن.',
+        'نخبة من أصحاب العمل في دول الخليج والعالم الذين استقدمنا لهم العمالة — في الضيافة وإنتاج الأغذية والبناء والتصنيع والمرافق والأمن.',
       cta: 'ابدأ طلب الاستقدام',
     },
     stats: [
-      { value: '18+', label: 'عامًا في الاستقدام الخارجي' },
+      { value: '25+', label: 'عامًا في الاستقدام الخارجي' },
       { value: '6', label: 'مكاتب في أنحاء الفلبين' },
       { value: '45–60', label: 'يومًا من طلب الاستقدام حتى السفر' },
       { value: '2029', label: 'ترخيص DMW ساري حتى', static: true },
@@ -162,7 +162,7 @@ export default {
           city: 'الرياض',
           roles: 'نادلة · مساعد طاهٍ',
           image: 'aboutHero',
-          alt: 'أفق الرياض وبرج المملكة — عمالة فلبينية مستقدمة للسعودية',
+          alt: 'أفق مدينة خليجية — عمالة فلبينية مستقدمة لدول الخليج والعالم',
         },
         {
           id: 'githa',
@@ -172,7 +172,7 @@ export default {
           city: 'المملكة العربية السعودية',
           roles: 'طاهٍ',
           image: 'citySaudi',
-          alt: 'أبراج مدينة سعودية عند الغروب — توريد العمالة لأصحاب العمل في المملكة',
+          alt: 'أبراج مدينة عند الغروب — توريد العمالة لأصحاب العمل في دول الخليج والعالم',
         },
         {
           id: 'aswar',
@@ -182,7 +182,7 @@ export default {
           city: 'المملكة العربية السعودية',
           roles: 'مخارط CNC · مشغلو آلات التغليف',
           image: 'deploy4',
-          alt: 'برج مكاتب — استقدام عمالة المصانع والصناعة للسعودية',
+          alt: 'برج مكاتب — استقدام عمالة المصانع والصناعة لدول الخليج والعالم',
         },
         {
           id: 'edama',
@@ -192,14 +192,14 @@ export default {
           city: 'الدمام',
           roles: 'مشغل كاميرات مراقبة',
           image: 'cityPhilippines',
-          alt: 'أفق مدينة خليجية — استقدام عمالة الأمن والمرافق للسعودية',
+          alt: 'أفق مدينة خليجية — استقدام عمالة الأمن والمرافق لدول الخليج والعالم',
         },
       ],
     },
     log: {
       eyebrow: 'أحدث طلبات الاستقدام',
       title: 'لمن نستقدم',
-      note: 'نخبة من عملائنا في المملكة',
+      note: 'نخبة من عملائنا في دول الخليج',
       columns: { employer: 'صاحب العمل', sector: 'القطاع', location: 'الموقع', roles: 'الوظائف المستقدمة' },
       rows: [
         {
@@ -232,7 +232,7 @@ export default {
           title: 'مستندات مكتملة',
           text: 'نتولى جواز السفر وشهادة حسن السيرة (NBI) والفحوصات الطبية وإجراءات DMW لكل عامل نستقدمه.',
         },
-        { icon: 'plane', title: 'جاهز للعمل', text: 'توجيه قبل السفر ليصل كل عامل مستعدًا للحياة والعمل في المملكة العربية السعودية.' },
+        { icon: 'plane', title: 'جاهز للعمل', text: 'توجيه قبل السفر ليصل كل عامل مستعدًا للحياة والعمل في دول الخليج والعالم.' },
       ],
     },
     cta: {

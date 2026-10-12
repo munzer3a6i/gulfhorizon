@@ -26,6 +26,9 @@ export const BUSINESS = {
 }
 
 const KEYWORDS_EN = [
+  'Filipino recruitment agency GCC and worldwide',
+  'international recruitment agency Philippines',
+  'overseas manpower agency worldwide',
   'recruitment agency Philippines to Saudi Arabia',
   'Saudi recruitment agency',
   'Filipino manpower agency',
@@ -52,6 +55,8 @@ const KEYWORDS_EN = [
 ]
 
 const KEYWORDS_AR = [
+  'استقدام عمالة فلبينية لدول الخليج والعالم',
+  'مكتب استقدام دولي',
   'مكتب استقدام من الفلبين',
   'استقدام عمالة فلبينية',
   'شركة استقدام في السعودية',
@@ -94,33 +99,33 @@ const SEO = {
     keywords: KEYWORDS_EN,
     pages: {
       home: {
-        title: 'Recruitment Agency Philippines to Saudi Arabia & GCC | Gulf Horizon',
+        title: 'Filipino Recruitment Agency for the GCC & Worldwide | Gulf Horizon',
         description:
           'DMW-licensed Filipino recruitment agency in Manila supplying skilled, engineering and factory workers, hospital staff, and hospitality, hotel and restaurant workers to employers in the GCC countries and worldwide — deployment in 45–60 days.',
-        keywords: ['Filipino manpower for Saudi Arabia', 'manpower agency Philippines', 'Saudi Arabia jobs recruitment'],
+        keywords: ['Filipino manpower for GCC countries', 'international manpower agency Philippines', 'overseas recruitment worldwide'],
       },
       deployments: {
-        title: 'Previous Deployments to Saudi Arabia & the Gulf | Gulf Horizon Recruitment',
+        title: 'Previous Deployments across the GCC & Worldwide | Gulf Horizon Recruitment',
         description:
-          'See the Saudi and GCC employers we have recruited Filipino workers for — hotels, hospitals, factories, construction and facilities companies in Riyadh, Jeddah, Dammam and across the Gulf.',
-        keywords: ['Saudi employers Filipino workers', 'recruitment track record Saudi Arabia', 'job orders Saudi Arabia'],
+          'See the employers across the GCC and worldwide we have recruited Filipino workers for — hotels, hospitals, factories, construction and facilities companies.',
+        keywords: ['GCC employers Filipino workers', 'recruitment track record GCC', 'international job orders'],
       },
       about: {
         title: 'About Gulf Horizon — DMW-Licensed Filipino Recruitment Agency in Manila',
         description:
-          'Gulf Horizon International Services is a DMW (formerly POEA) licensed manpower agency with a Manila head office and five regional branches, recruiting Filipino talent for Saudi Arabia, UAE, Qatar, Kuwait, Bahrain and Oman.',
-        keywords: ['licensed manpower agency Manila', 'POEA accredited agency Saudi Arabia', 'Filipino recruitment company'],
+          'Gulf Horizon International Services is a DMW (formerly POEA) licensed manpower agency with a Manila head office and five regional branches, recruiting Filipino talent for the GCC countries and other international countries.',
+        keywords: ['licensed manpower agency Manila', 'POEA accredited agency GCC', 'Filipino recruitment company'],
       },
       contact: {
-        title: 'Send a Job Order — Hire Filipino Workers for Saudi Arabia | Gulf Horizon',
+        title: 'Send a Job Order — Hire Filipino Workers for the GCC & Worldwide | Gulf Horizon',
         description:
-          'Request Filipino candidates for your company in Saudi Arabia or the Gulf. Send a job order to our Manila recruitment team and receive a qualified shortlist — call or WhatsApp +63 917 888 8970 or email contact@gulfhorizon.net.',
-        keywords: ['send job order', 'hire Filipino workers Saudi Arabia', 'recruitment agency contact Manila'],
+          'Request Filipino candidates for your company in the GCC or anywhere in the world. Send a job order to our Manila recruitment team and receive a qualified shortlist — call or WhatsApp +63 917 888 8970 or email contact@gulfhorizon.net.',
+        keywords: ['send job order', 'hire Filipino workers GCC', 'recruitment agency contact Manila'],
       },
       license: {
         title: 'DMW License DMW-217-LB-11282023-R | Gulf Horizon Recruitment Agency',
         description:
-          'Verify Gulf Horizon International Services’ license with the Department of Migrant Workers (DMW, formerly POEA). Licensed to recruit Filipino land-based workers for Saudi Arabia and the GCC.',
+          'Verify Gulf Horizon International Services’ license with the Department of Migrant Workers (DMW, formerly POEA). Licensed to recruit Filipino land-based workers for the GCC countries and worldwide.',
         keywords: ['DMW license verification', 'POEA license check', 'licensed recruitment agency Philippines'],
       },
       privacy: {
@@ -131,7 +136,7 @@ const SEO = {
       },
       terms: {
         title: 'Terms of Use | Gulf Horizon International Services',
-        description: 'Terms of use for the Gulf Horizon International Services website — a DMW-licensed recruitment agency for Saudi Arabia and the Gulf.',
+        description: 'Terms of use for the Gulf Horizon International Services website — a DMW-licensed recruitment agency for the GCC and worldwide.',
         keywords: ['terms of use recruitment agency'],
       },
     },
@@ -142,16 +147,16 @@ const SEO = {
     keywords: KEYWORDS_AR,
     pages: {
       home: {
-        title: 'مكتب استقدام عمالة فلبينية للسعودية والخليج | أفق الخليج',
+        title: 'مكتب استقدام عمالة فلبينية لدول الخليج والعالم | أفق الخليج',
         description:
           'وكالة استقدام فلبينية مرخّصة من إدارة العمال المهاجرين (DMW) في مانيلا، نوفّر العمالة الماهرة والهندسية وعمال المصانع وطواقم المستشفيات وعمالة الضيافة والفنادق والمطاعم لأصحاب العمل في دول الخليج العربي ودول أخرى حول العالم خلال 45–60 يومًا.',
-        keywords: ['استقدام عمالة من الفلبين للسعودية', 'مكتب استقدام فلبيني', 'توظيف عمالة فلبينية'],
+        keywords: ['استقدام عمالة من الفلبين لدول الخليج', 'مكتب استقدام فلبيني', 'توظيف عمالة فلبينية حول العالم'],
       },
       deployments: {
-        title: 'مشاريع الاستقدام السابقة في السعودية والخليج | أفق الخليج',
+        title: 'مشاريع الاستقدام السابقة في دول الخليج والعالم | أفق الخليج',
         description:
-          'تعرّف على أصحاب العمل في السعودية ودول الخليج الذين استقدمنا لهم عمالة فلبينية — فنادق ومستشفيات ومصانع وشركات إنشاءات ومرافق في الرياض وجدة والدمام.',
-        keywords: ['عملاء الاستقدام في السعودية', 'طلبات استقدام', 'سجل الاستقدام'],
+          'تعرّف على أصحاب العمل في دول الخليج والعالم الذين استقدمنا لهم عمالة فلبينية — فنادق ومستشفيات ومصانع وشركات إنشاءات ومرافق.',
+        keywords: ['عملاء الاستقدام في دول الخليج', 'طلبات استقدام', 'سجل الاستقدام'],
       },
       about: {
         title: 'من نحن — وكالة استقدام فلبينية مرخّصة في مانيلا | أفق الخليج',
@@ -160,9 +165,9 @@ const SEO = {
         keywords: ['وكالة توظيف مرخصة', 'شركة استقدام فلبينية'],
       },
       contact: {
-        title: 'أرسل طلب استقدام — استقدم عمالة فلبينية للسعودية | أفق الخليج',
+        title: 'أرسل طلب استقدام — استقدم عمالة فلبينية لدول الخليج والعالم | أفق الخليج',
         description:
-          'اطلب مرشحين فلبينيين لشركتك في السعودية أو الخليج. أرسل طلب الاستقدام إلى فريقنا في مانيلا واحصل على قائمة مختصرة بمرشحين مؤهلين — واتساب ‎+63 917 888 8970 أو contact@gulfhorizon.net.',
+          'اطلب مرشحين فلبينيين لشركتك في دول الخليج أو في أي مكان في العالم. أرسل طلب الاستقدام إلى فريقنا في مانيلا واحصل على قائمة مختصرة بمرشحين مؤهلين — واتساب ‎+63 917 888 8970 أو contact@gulfhorizon.net.',
         keywords: ['طلب استقدام', 'التواصل مع مكتب الاستقدام'],
       },
       license: {
@@ -203,8 +208,8 @@ export function structuredData(siteUrl, lang) {
       name: BUSINESS.legalName,
       alternateName: [brandEn, 'Gulf Horizon', BUSINESS.nameAr],
       description: isAr
-        ? 'وكالة استقدام فلبينية مرخّصة من DMW تستقدم العمالة الماهرة والمهنيين لأصحاب العمل في السعودية ودول الخليج.'
-        : 'DMW-licensed Philippine recruitment agency deploying skilled Filipino professionals and workers to employers in Saudi Arabia and the GCC.',
+        ? 'وكالة استقدام فلبينية مرخّصة من DMW تستقدم العمالة الماهرة والمهنيين لأصحاب العمل في دول الخليج والعالم.'
+        : 'DMW-licensed Philippine recruitment agency deploying skilled Filipino professionals and workers to employers in the GCC countries and worldwide.',
       url: siteUrl,
       logo: `${siteUrl}/favicon.svg`,
       image: `${siteUrl}/og-image.jpg`,

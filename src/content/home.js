@@ -11,17 +11,17 @@ export default {
       highlight: ['Filipino', 'talent'],
       body: 'Gulf Horizon International Services, Inc. is a DMW-licensed agency in Manila, deploying skilled Filipino professionals and workers to employers across the GCC countries and the whole world — in every skill and job category.',
       cta: 'Send a job order',
-      proofTitle: '18+ years of overseas placements',
+      proofTitle: '25+ years of overseas placements',
       proofSub: 'Head office in Manila + 5 regional branches',
       avatarsAlt: 'Logos of employers we recruit for',
-      photoAlt: 'Filipino professionals recruited for Saudi Arabia standing before the Riyadh skyline — Gulf Horizon recruitment agency',
+      photoAlt: 'Filipino professionals recruited for the GCC and worldwide standing before a Gulf city skyline — Gulf Horizon recruitment agency',
       mediaCta: 'View manpower categories',
       statValue: '45–60 days',
       statLabel: 'From job order to deployment',
     },
     statsLabel: 'Key figures',
     stats: [
-      { value: '18+', label: 'Years in overseas recruitment' },
+      { value: '25+', label: 'Years in overseas recruitment' },
       { value: '6', label: 'Offices across the Philippines' },
       { value: '45–60', label: 'Days from job order to deployment' },
       { value: '2029', label: 'DMW license valid through' },
@@ -29,18 +29,18 @@ export default {
     values: {
       eyebrow: 'THE GULF HORIZON DIFFERENCE',
       title: 'Why employers choose us',
-      description: 'Our mission is simple: build a lasting reputation for integrity and reliability, and meet even the most demanding manpower requests of our Saudi principals.',
+      description: 'Our mission is simple: build a lasting reputation for integrity and reliability, and meet even the most demanding manpower requests of our principals across the GCC and worldwide.',
       items: [
         { title: 'Direct Sourcing', body: 'Filipino talent recruited through our Manila head office and branches in Davao, Iloilo, Pangasinan, Bacolod and Cagayan de Oro.' },
-        { title: 'Integrity & Reliability', body: 'Clear processes and honest timelines — the reputation we have built over more than 18 years of overseas recruitment.' },
+        { title: 'Integrity & Reliability', body: 'Clear processes and honest timelines — the reputation we have built over more than 25 years of overseas recruitment.' },
         { title: 'Skills-Tested Workers', body: 'Every candidate is trade-tested through accredited skills testing and training centres before selection.' },
-        { title: 'Licensed & Compliant', body: 'Licensed by the Department of Migrant Workers (formerly POEA) and aligned with Saudi requirements.' },
+        { title: 'Licensed & Compliant', body: 'Licensed by the Department of Migrant Workers (formerly POEA) and aligned with the requirements of every destination country.' },
       ],
     },
     categories: {
       eyebrow: 'WHAT WE SUPPLY',
       title: 'Manpower for every part of your operation',
-      description: 'Licensed to recruit land-based workers across all skills and job categories — these are the roles Saudi employers ask us for most.',
+      description: 'Licensed to recruit land-based workers across all skills and job categories — these are the roles employers across the GCC and worldwide ask us for most.',
       feature: {
         tag: 'CATEGORY 01 · MOST REQUESTED',
         title: 'Skilled Trades & Manufacturing',
@@ -49,9 +49,9 @@ export default {
       },
       link: 'Request this category',
       cards: [
-        { tag: 'CATEGORY 02', image: 'hotel', title: 'Hospitality & F&B', roles: 'Waitresses · Commis · Chef cooks · Baristas · Housekeeping', alt: 'Hotel lobby — Filipino hospitality and F&B staff recruitment for Saudi hotels' },
-        { tag: 'CATEGORY 03', image: 'hospital', title: 'Healthcare & Care', roles: 'Medicine hospital staff · Staff nurses · Caregivers · Medical aides', alt: 'Filipino nurse caring for an elderly patient — nurses and caregivers recruitment for Saudi Arabia' },
-        { tag: 'CATEGORY 04', image: 'drivers', title: 'Drivers & Logistics', roles: 'Family drivers · Heavy-vehicle drivers · Warehouse staff', alt: 'Car before the Riyadh skyline — Filipino family and heavy-vehicle drivers recruitment for KSA' },
+        { tag: 'CATEGORY 02', image: 'hotel', title: 'Hospitality & F&B', roles: 'Waitresses · Commis · Chef cooks · Baristas · Housekeeping', alt: 'Hotel lobby — Filipino hospitality and F&B staff recruitment for GCC and international hotels' },
+        { tag: 'CATEGORY 03', image: 'hospital', title: 'Healthcare & Care', roles: 'Medicine hospital staff · Staff nurses · Caregivers · Medical aides', alt: 'Filipino nurse caring for an elderly patient — nurses and caregivers recruitment for the GCC and worldwide' },
+        { tag: 'CATEGORY 04', image: 'drivers', title: 'Drivers & Logistics', roles: 'Family drivers · Heavy-vehicle drivers · Warehouse staff', alt: 'Car before a Gulf city skyline — Filipino family and heavy-vehicle drivers recruitment for the GCC and worldwide' },
       ],
     },
     process: {
@@ -69,7 +69,7 @@ export default {
     clients: {
       eyebrow: 'TRUSTED ACROSS THE GULF',
       title: 'Employers who rely on us',
-      description: 'A selection of the 77+ hospitals, manufacturers, hotels and business groups we have recruited for across Saudi Arabia and the Gulf.',
+      description: 'A selection of the 77+ hospitals, manufacturers, hotels and business groups we have recruited for across the GCC and worldwide.',
       items: [
         { name: 'King Khaled Eye Specialist Hospital', place: 'Riyadh, KSA' },
         { name: 'Al Othaim Commercial Co.', place: 'Riyadh, KSA' },
@@ -111,17 +111,17 @@ export default {
       highlight: ['كفاءات', 'فلبينية'],
       body: 'أفق الخليج للخدمات العالمية وكالة استقدام مرخّصة من DMW مقرها مانيلا، تستقدم المهنيين والعمال الفلبينيين المهرة لأصحاب العمل في دول الخليج العربي والعالم أجمع — في جميع المهارات والتخصصات.',
       cta: 'أرسل طلب استقدام',
-      proofTitle: 'أكثر من 18 عامًا في التوظيف الخارجي',
+      proofTitle: 'أكثر من 25 عامًا في التوظيف الخارجي',
       proofSub: 'مكتب رئيسي في مانيلا و5 فروع إقليمية',
       avatarsAlt: 'شعارات أصحاب عمل نستقدم لهم',
-      photoAlt: 'مهنيان فلبينيان مستقدمان للعمل في السعودية أمام أفق مدينة الرياض — مكتب استقدام أفق الخليج',
+      photoAlt: 'مهنيان فلبينيان مستقدمان للعمل في دول الخليج والعالم أمام أفق مدينة خليجية — مكتب استقدام أفق الخليج',
       mediaCta: 'استعرض فئات العمالة',
       statValue: '45–60 يومًا',
       statLabel: 'من طلب الاستقدام حتى السفر',
     },
     statsLabel: 'أرقام رئيسية',
     stats: [
-      { value: '18+', label: 'عامًا في الاستقدام الخارجي' },
+      { value: '25+', label: 'عامًا في الاستقدام الخارجي' },
       { value: '6', label: 'مكاتب في أنحاء الفلبين' },
       { value: '45–60', label: 'يومًا من طلب الاستقدام حتى السفر' },
       { value: '2029', label: 'ترخيص DMW ساري حتى' },
@@ -129,18 +129,18 @@ export default {
     values: {
       eyebrow: 'ما يميز أفق الخليج',
       title: 'لماذا يختارنا أصحاب العمل',
-      description: 'رسالتنا واضحة: بناء سمعة راسخة في النزاهة والموثوقية، وتلبية أكثر طلبات العمالة تطلبًا لعملائنا في المملكة.',
+      description: 'رسالتنا واضحة: بناء سمعة راسخة في النزاهة والموثوقية، وتلبية أكثر طلبات العمالة تطلبًا لعملائنا في دول الخليج والعالم.',
       items: [
         { title: 'استقطاب مباشر', body: 'كفاءات فلبينية نستقطبها عبر مكتبنا الرئيسي في مانيلا وفروعنا في دافاو وإيلويلو وبانغاسينان وباكولود وكاغايان دي أورو.' },
-        { title: 'النزاهة والموثوقية', body: 'إجراءات واضحة وجداول زمنية صادقة — سمعة بنيناها على مدى أكثر من 18 عامًا في الاستقدام الخارجي.' },
+        { title: 'النزاهة والموثوقية', body: 'إجراءات واضحة وجداول زمنية صادقة — سمعة بنيناها على مدى أكثر من 25 عامًا في الاستقدام الخارجي.' },
         { title: 'عمالة مختبرة المهارات', body: 'يخضع كل مرشح لاختبار مهني في مراكز اختبار وتدريب معتمدة قبل الاختيار.' },
-        { title: 'مرخّصون وملتزمون', body: 'مرخّصون من إدارة العمال المهاجرين (POEA سابقًا) وملتزمون بالمتطلبات السعودية.' },
+        { title: 'مرخّصون وملتزمون', body: 'مرخّصون من إدارة العمال المهاجرين (POEA سابقًا) وملتزمون بمتطلبات كل دولة نستقدم لها.' },
       ],
     },
     categories: {
       eyebrow: 'ما نوفّره',
       title: 'عمالة لكل جزء من أعمالك',
-      description: 'مرخّصون لاستقدام العمالة في جميع المهارات والتخصصات — وهذه أكثر الوظائف التي يطلبها أصحاب العمل في المملكة.',
+      description: 'مرخّصون لاستقدام العمالة في جميع المهارات والتخصصات — وهذه أكثر الوظائف التي يطلبها أصحاب العمل في دول الخليج والعالم.',
       feature: {
         tag: 'الفئة 01 · الأكثر طلبًا',
         title: 'الحرف الماهرة والتصنيع',
@@ -149,9 +149,9 @@ export default {
       },
       link: 'اطلب هذه الفئة',
       cards: [
-        { tag: 'الفئة 02', image: 'hotel', title: 'الضيافة والأغذية والمشروبات', roles: 'نادلات · مساعدو طهاة · طهاة · باريستا · تدبير منزلي', alt: 'ردهة فندق — استقدام عمالة فلبينية للفنادق والمطاعم في السعودية' },
-        { tag: 'الفئة 03', image: 'hospital', title: 'الرعاية الصحية والتمريض', roles: 'الطواقم الطبية في المستشفيات · ممرضون · مقدمو رعاية · مساعدون طبيون', alt: 'ممرضة فلبينية تعتني بمريض مسن — استقدام ممرضات ومقدمي رعاية للسعودية' },
-        { tag: 'الفئة 04', image: 'drivers', title: 'السائقون والخدمات اللوجستية', roles: 'سائقو عائلات · سائقو معدات ثقيلة · عمال مستودعات', alt: 'سيارة أمام أفق الرياض — استقدام سائقين فلبينيين للعائلات والمعدات الثقيلة' },
+        { tag: 'الفئة 02', image: 'hotel', title: 'الضيافة والأغذية والمشروبات', roles: 'نادلات · مساعدو طهاة · طهاة · باريستا · تدبير منزلي', alt: 'ردهة فندق — استقدام عمالة فلبينية للفنادق والمطاعم في دول الخليج والعالم' },
+        { tag: 'الفئة 03', image: 'hospital', title: 'الرعاية الصحية والتمريض', roles: 'الطواقم الطبية في المستشفيات · ممرضون · مقدمو رعاية · مساعدون طبيون', alt: 'ممرضة فلبينية تعتني بمريض مسن — استقدام ممرضات ومقدمي رعاية لدول الخليج والعالم' },
+        { tag: 'الفئة 04', image: 'drivers', title: 'السائقون والخدمات اللوجستية', roles: 'سائقو عائلات · سائقو معدات ثقيلة · عمال مستودعات', alt: 'سيارة أمام أفق مدينة خليجية — استقدام سائقين فلبينيين للعائلات والمعدات الثقيلة لدول الخليج والعالم' },
       ],
     },
     process: {
@@ -169,7 +169,7 @@ export default {
     clients: {
       eyebrow: 'ثقة في أنحاء الخليج',
       title: 'أصحاب عمل يعتمدون علينا',
-      description: 'نخبة من أكثر من 77 مستشفى ومصنعًا وفندقًا ومجموعة أعمال استقدمنا لها العمالة في المملكة ودول الخليج.',
+      description: 'نخبة من أكثر من 77 مستشفى ومصنعًا وفندقًا ومجموعة أعمال استقدمنا لها العمالة في دول الخليج والعالم.',
       items: [
         { name: 'مستشفى الملك خالد التخصصي للعيون', place: 'الرياض، السعودية' },
         { name: 'شركة العثيم التجارية', place: 'الرياض، السعودية' },

@@ -22,7 +22,7 @@ function bezier(g, t) {
 }
 
 /**
- * Animated flight arc from the Philippines card to the Saudi Arabia card, with a plane flying along it.
+ * Animated flight arc from the Philippines card to the GCC & Worldwide card, with a plane flying along it.
  * Geometry is measured in pixels so the plane never distorts.
  */
 function RouteArc({ label }) {
@@ -46,7 +46,7 @@ function RouteArc({ label }) {
   }, [])
 
   // Physical (left-based) coordinates. The Philippines card is the second card, i.e. on the right in LTR
-  // and on the left in RTL. Flights go Philippines -> Saudi Arabia.
+  // and on the left in RTL. Flights go Philippines -> GCC & Worldwide.
   if (size) {
     const half = (size.w - GAP) / 2
     const leftCenter = half / 2

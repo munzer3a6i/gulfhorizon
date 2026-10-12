@@ -7,9 +7,9 @@ export default {
   en: {
     hero: {
       eyebrow: `DMW License No. ${LICENSE_NO}`,
-      title: 'Filipino talent for the Kingdom’s growth',
+      title: 'Filipino talent for GCC countries and the whole world',
       highlight: ['Filipino', 'talent'],
-      body: 'Gulf Horizon International Services, Inc. is a DMW-licensed agency in Manila, deploying skilled Filipino professionals and workers to employers across Saudi Arabia — in every skill and job category.',
+      body: 'Gulf Horizon International Services, Inc. is a DMW-licensed agency in Manila, deploying skilled Filipino professionals and workers to employers across the GCC countries and the whole world — in every skill and job category.',
       cta: 'Send a job order',
       proofTitle: '18+ years of overseas placements',
       proofSub: 'Head office in Manila + 5 regional branches',
@@ -107,9 +107,9 @@ export default {
   ar: {
     hero: {
       eyebrow: `رقم ترخيص DMW: ${LICENSE_NO}`,
-      title: 'كفاءات فلبينية لنمو المملكة',
+      title: 'كفاءات فلبينية لدول الخليج والعالم أجمع',
       highlight: ['كفاءات', 'فلبينية'],
-      body: 'أفق الخليج للخدمات العالمية وكالة استقدام مرخّصة من DMW مقرها مانيلا، تستقدم المهنيين والعمال الفلبينيين المهرة لأصحاب العمل في جميع أنحاء المملكة العربية السعودية — في جميع المهارات والتخصصات.',
+      body: 'أفق الخليج للخدمات العالمية وكالة استقدام مرخّصة من DMW مقرها مانيلا، تستقدم المهنيين والعمال الفلبينيين المهرة لأصحاب العمل في دول الخليج العربي والعالم أجمع — في جميع المهارات والتخصصات.',
       cta: 'أرسل طلب استقدام',
       proofTitle: 'أكثر من 18 عامًا في التوظيف الخارجي',
       proofSub: 'مكتب رئيسي في مانيلا و5 فروع إقليمية',
